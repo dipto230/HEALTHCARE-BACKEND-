@@ -1,0 +1,10 @@
+model Patient {
+    id String @id @default(uuid(7))
+    name String 
+    email String  @unique
+    profilePhoto String?
+    contactNumber String
+    address String?
+    isDeleted Boolean @default(false)
+    dele
+}
