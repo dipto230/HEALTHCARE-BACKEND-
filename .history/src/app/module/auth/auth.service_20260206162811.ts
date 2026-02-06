@@ -50,7 +50,7 @@ const loginUser = async (payload: ILoginUserPayload) => {
         throw new Error("User is blocked")
     }
     if (data.user.isDeleted || data.user.status === UserStatus.DELETED) {
-        throw new Error("user is deleted")
+        
     }
     return data
 }
@@ -58,6 +58,5 @@ const loginUser = async (payload: ILoginUserPayload) => {
 
 
 export const AuthService = {
-    registerPatient,
-    loginUser
+    registerPatient
 }

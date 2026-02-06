@@ -24,14 +24,12 @@ const loginUser = catchAsync(
         sendResponse(res, {
             httpStatusCode: 200,
             success: true,
-            message: "User logged in Successfully",
-            data:result
+            message:"User logged in "
         })
 
     }
 )
 
 export const AuthController = {
-    registerPatient,
-    loginUser
+    registerPatient
 }

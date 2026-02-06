@@ -23,15 +23,12 @@ const loginUser = catchAsync(
         const result = await AuthService.loginUser(payload)
         sendResponse(res, {
             httpStatusCode: 200,
-            success: true,
-            message: "User logged in Successfully",
-            data:result
+            
         })
 
     }
 )
 
 export const AuthController = {
-    registerPatient,
-    loginUser
+    registerPatient
 }

@@ -32,6 +32,5 @@ const loginUser = catchAsync(
 )
 
 export const AuthController = {
-    registerPatient,
-    loginUser
+    registerPatient
 }
