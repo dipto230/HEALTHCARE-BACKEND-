@@ -1,17 +1,15 @@
 import { Request,  Response } from "express";
 import { SpecialtyService } from "./specialty.service";
 import { catchAsync } from "../../shared/catchAsync";
-import { sendResponse } from "../../shared/sendResponse";
 
 const createSpecialty = async (req: Request, res: Response) => {
     try {
         const payload = req.body;
     const result = await SpecialtyService.createSpecialty(payload);
-    sendResponse(res, {
-  httpStatusCode: 201,
-  success: true,
-  message: "Specialty Created Successfully",
-  data: result,
+    res.status(201).json({
+        success: true,
+        message: "Specialty Created Successfully",
+        data:result
     })
     } catch (error) {
         console.log(error)
@@ -20,12 +18,17 @@ const createSpecialty = async (req: Request, res: Response) => {
             message: "Failed to create specialty",
             error: error instanceof Error ? error.message : 'Unknown error'
         })
- }  
+   }
 }
 
+interface IResponse<T>{
+    httpStatusCode: number;
+    success: boolean;
+    message: string;
+    data?: T;
+}
 
-
-
+const sendResponse =<>(res:Response, req:Request)
 
 
 

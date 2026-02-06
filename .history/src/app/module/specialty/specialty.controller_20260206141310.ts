@@ -8,7 +8,7 @@ const createSpecialty = async (req: Request, res: Response) => {
         const payload = req.body;
     const result = await SpecialtyService.createSpecialty(payload);
     sendResponse(res, {
-  httpStatusCode: 201,
+       httpStatusCode: 201,
   success: true,
   message: "Specialty Created Successfully",
   data: result,
@@ -20,7 +20,7 @@ const createSpecialty = async (req: Request, res: Response) => {
             message: "Failed to create specialty",
             error: error instanceof Error ? error.message : 'Unknown error'
         })
- }  
+   }
 }
 
 

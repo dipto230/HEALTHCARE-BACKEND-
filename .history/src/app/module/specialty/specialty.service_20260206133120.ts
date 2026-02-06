@@ -40,6 +40,5 @@ const updateSpecialty = async (
 export const SpecialtyService = {
     createSpecialty,
     getAllSpecialties,
-    deleteSpecialty,
-    updateSpecialty
+    deleteSpecialty
 }
