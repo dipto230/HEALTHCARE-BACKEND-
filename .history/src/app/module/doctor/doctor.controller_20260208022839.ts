@@ -1,0 +1,78 @@
+import status from "http-status";
+import { catchAsync } from "../../shared/catchAsync";
+import { sendResponse } from "../../shared/sendResponse";
+import { DoctorService } from "./doctor.service";
+import { Request, Response } from "express";
+
+const getAllDoctors = catchAsync(
+    async (req: Request, res: Response) => {
+        
+        const result = await DoctorService.getAllDoctors()
+
+        sendResponse(res, {
+            httpStatusCode: status.OK,
+            success: true,
+            message: "Doctor fetched successfully",
+            data:result  
+        })
+    }
+)
+
+
+
+//code section done by me
+
+const getDoctorById = catchAsync(
+  async (req: Request, res: Response) => {
+    const { id } = req.params
+
+    const result = await DoctorService.getDoctorById(id)
+
+    sendResponse(res, {
+      httpStatusCode: status.OK,
+      success: true,
+      message: "Doctor fetched successfully",
+      data: result
+    })
+  }
+)
+
+const updateDoctor = catchAsync(
+  async (req: Request, res: Response) => {
+    const { id } = req.params
+    const payload = req.body
+
+    const result = await DoctorService.updateDoctor(id, payload)
+
+    sendResponse(res, {
+      httpStatusCode: status.OK,
+      success: true,
+      message: "Doctor updated successfully",
+      data: result
+    })
+  }
+)
+
+const deleteDoctor = catchAsync(
+  async (req: Request, res: Response) => {
+    const { id } = req.params
+
+    const result = await DoctorService.deleteDoctor(id)
+
+    sendResponse(res, {
+      httpStatusCode: status.OK,
+      success: true,
+      message: "Doctor deleted successfully",
+      data: result
+    })
+  }
+)
+
+export const DoctorController = {
+    getAllDoctors,
+    getDoctorById,
+    deleteDoctor,
+    updateDoctor
+
+
+}
