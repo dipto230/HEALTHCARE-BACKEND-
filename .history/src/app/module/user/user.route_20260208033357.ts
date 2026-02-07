@@ -1,4 +1,4 @@
-import { NextFunction, Request, Response, Router } from "express";
+import { Router } from "express";
 import { UserController } from "./user.controller";
 import z from "zod";
 import { Gender } from "../../../generated/prisma/enums";
@@ -15,35 +15,15 @@ const createDoctorZodSchema = z.object({
         experience: z.int("Experience must be an integer").nonnegative("Experience can not be negative").optional(),
         gender: z.enum([Gender.MALE, Gender.FEMALE], "Gender must be either MALE or FEMALE"),
         appointmentFee: z.number("Appointment fee must be a number").nonnegative("Appointment fee can not be negative"),
-        qualification: z.string("Qualification is required").min(2, "Qualification must be at least 2 characters").max(50, "Qualification must be at most 50 characters"),
-        currentWorkingPlace: z
-  .string()
-  .min(1, "Current workplace is required")
-  .min(2, "Current workplace must be at least 2 characters")
-  .max(50, "Current workplace must be at most 50 characters"),
-
-        designation: z.string("Designation is required").min(2, "Designation must be at least 2 characters").max(50, "Designation must be at most 50 characters"),
-        
-    }),
-    specialties: z.array(z.uuid(), "Specialties must be an array of strings").min(1, "At least one specialty is required")
         
     })
     
-
+})
 
 const router = Router()
 
 
 
-router.post("/create-doctor", (req: Request, res: Response, next: NextFunction) => {
-    const parsedResult = createDoctorZodSchema.safeParse(req.body);
-    if (!parsedResult.success) {
-        next(parsedResult.error)
-    }
-    req.body = parsedResult.data;
-    // console.log(req.body, "After zod validation")
-     next()
-    
-}, UserController.createDoctor)
+router.post("/create-doctor", UserController.createDoctor)
 
 export const UserRoutes = router;

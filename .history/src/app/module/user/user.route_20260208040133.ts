@@ -41,7 +41,7 @@ router.post("/create-doctor", (req: Request, res: Response, next: NextFunction) 
         next(parsedResult.error)
     }
     req.body = parsedResult.data;
-    // console.log(req.body, "After zod validation")
+    console.log(req.body, "After zod validation")
      next()
     
 }, UserController.createDoctor)

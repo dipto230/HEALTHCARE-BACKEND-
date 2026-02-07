@@ -1,0 +1,16 @@
+import { Router } from "express";
+import { UserController } from "./user.controller";
+import z from "zod";
+
+
+const createDoctorZodSchema = z.object({
+    name:z.string("Name is required").min()
+})
+
+const router = Router()
+
+
+
+router.post("/create-doctor", UserController.createDoctor)
+
+export const UserRoutes = router;
