@@ -42,11 +42,8 @@ export const globalErrorHandler = (err: any, req: Request, res: Response, next: 
         statusCode = err.statusCode;
         message = err.message;
         stack = err.stack;
-        errorSources = [
-            {
-                path: '',
-                message: err.message
-            }
+        errorSources =[
+            
         ]
     }
     
@@ -54,12 +51,6 @@ export const globalErrorHandler = (err: any, req: Request, res: Response, next: 
         statusCode = status.INTERNAL_SERVER_ERROR
         message = err.message
         stack = err.stack
-          errorSources = [
-            {
-                path: '',
-                message: err.message
-            }
-        ]
     }
 
     const errorResponse: TErrorResponse = {

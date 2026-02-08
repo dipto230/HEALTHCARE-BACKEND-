@@ -5,7 +5,6 @@ import status from "http-status";
 import z from "zod";
 import { TErrorResponse, TErrorSource } from "../interfaces/error.interfaces";
 import { handleZodError } from "../errorHelpers/handleZodError";
-import AppError from "./AppError";
 
 
 
@@ -29,7 +28,6 @@ export const globalErrorHandler = (err: any, req: Request, res: Response, next: 
         message = simplifiedError.message
         // errorSources.push(...simplifiedError.errorSources!)
         errorSources = [...simplifiedError.errorSources!]
-        stack = err.stack
 
         // err.issues.forEach(issue => {
         //     errorSource.push({
@@ -38,28 +36,10 @@ export const globalErrorHandler = (err: any, req: Request, res: Response, next: 
         //         message:issue.message
         //     })
         // })
-    } else if (err instanceof AppError) {
-        statusCode = err.statusCode;
-        message = err.message;
-        stack = err.stack;
-        errorSources = [
-            {
-                path: '',
-                message: err.message
-            }
-        ]
-    }
-    
-    else if (err instanceof Error) {
+    } else if (err instanceof Error) {
         statusCode = status.INTERNAL_SERVER_ERROR
         message = err.message
         stack = err.stack
-          errorSources = [
-            {
-                path: '',
-                message: err.message
-            }
-        ]
     }
 
     const errorResponse: TErrorResponse = {
