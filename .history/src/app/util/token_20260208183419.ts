@@ -1,0 +1,9 @@
+import { JwtPayload } from "jsonwebtoken";
+import { jwtUtils } from "./jwt";
+import { envVars } from "../../config/env";
+
+
+
+const getAccessToken = (payload: JwtPayload) => {
+    const accessTok = jwtUtils.createToken(payload, envVars.ACCESS_TOKEN_SECRET,{expiresIn:envVars.ACCESS_TOKEN_EXPIRES_IN})
+}
