@@ -23,7 +23,7 @@ export const globalErrorHandler = (err: any, req: Request, res: Response, next: 
     if (err instanceof z.ZodError) {
         const simplifiedError = handleZodError(err);
 
-        statusCode = simplifiedError.statusCode as number
+        statusCode = simplifiedError.statusCode
         message = simplifiedError.message
         // errorSources.push(...simplifiedError.errorSources!)
         errorSources = [...simplifiedError.errorSources!]
@@ -37,12 +37,12 @@ export const globalErrorHandler = (err: any, req: Request, res: Response, next: 
         // })
     }
 
-    const errorResponse: TErrorResponse = {
-         success: false,
-        message: message,
-        errorSources,
-        error: envVars.NODE_ENV === 'development' ? err: undefined,
-    }
+    // const errorResponse: TErrorResponse = {
+    //      success: false,
+    //     message: message,
+    //     errorSources,
+    //     error: envVars.NODE_ENV === 'development' ? err: undefined,
+    // }
 
     res.status(statusCode).json(errorResponse)
 }

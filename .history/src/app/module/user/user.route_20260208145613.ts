@@ -3,7 +3,6 @@ import { UserController } from "./user.controller";
 
 
 import { validateRequest } from "../../middleware/validateRequest";
-import { createDoctorZodSchema } from "../../middleware/user.validation";
 
 
 

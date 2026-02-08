@@ -1,9 +1,8 @@
 import {  Router } from "express";
 import { UserController } from "./user.controller";
 
-
+import { Gender } from "../../../generated/prisma/enums";
 import { validateRequest } from "../../middleware/validateRequest";
-import { createDoctorZodSchema } from "../../middleware/user.validation";
 
 
 

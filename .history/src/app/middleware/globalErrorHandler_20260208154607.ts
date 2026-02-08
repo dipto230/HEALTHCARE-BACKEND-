@@ -15,7 +15,7 @@ export const globalErrorHandler = (err: any, req: Request, res: Response, next: 
         console.log("Error from global error handler", err);
     }
 
-    let errorSources:TErrorSource[] = []
+    const errorSource:TErrorSource[] = []
     let statusCode: number = status.INTERNAL_SERVER_ERROR;
     let message: string = 'Internal Server Error'
     
@@ -23,18 +23,16 @@ export const globalErrorHandler = (err: any, req: Request, res: Response, next: 
     if (err instanceof z.ZodError) {
         const simplifiedError = handleZodError(err);
 
-        statusCode = simplifiedError.statusCode as number
-        message = simplifiedError.message
-        // errorSources.push(...simplifiedError.errorSources!)
-        errorSources = [...simplifiedError.errorSources!]
+        statusCode = simplifiedError.message;
+        message = "zod validation error"
 
-        // err.issues.forEach(issue => {
-        //     errorSource.push({
-        //         // path: issue.path.length > 1 ? issue.path.join("=>"):issue.path[0].toString(),
-        //         path:issue.path.join(" "),
-        //         message:issue.message
-        //     })
-        // })
+        err.issues.forEach(issue => {
+            errorSource.push({
+                // path: issue.path.length > 1 ? issue.path.join("=>"):issue.path[0].toString(),
+                path:issue.path.join(" "),
+                message:issue.message
+            })
+        })
     }
 
     const errorResponse: TErrorResponse = {

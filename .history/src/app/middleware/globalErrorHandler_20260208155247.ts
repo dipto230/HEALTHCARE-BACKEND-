@@ -23,7 +23,7 @@ export const globalErrorHandler = (err: any, req: Request, res: Response, next: 
     if (err instanceof z.ZodError) {
         const simplifiedError = handleZodError(err);
 
-        statusCode = simplifiedError.statusCode as number
+        statusCode = simplifiedError.statusCode as nu
         message = simplifiedError.message
         // errorSources.push(...simplifiedError.errorSources!)
         errorSources = [...simplifiedError.errorSources!]
