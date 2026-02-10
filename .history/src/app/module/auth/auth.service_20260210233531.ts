@@ -280,6 +280,5 @@ export const AuthService = {
     loginUser,
     getMe,
     getNewToken,
-    changePassword,
-    logoutUser
+    changePassword
 }

@@ -267,11 +267,8 @@ const changePassword = async (payload: IChangePasswordPayload, sessionToken: str
 
 const logoutUser = async (sessionToken: string) => {
     const result = await auth.api.signOut({
-        headers: new Headers({
-            Authorization : `Bearer ${sessionToken}`
-        })
+        h
     })
-    return result
 }
 
 
@@ -280,6 +277,5 @@ export const AuthService = {
     loginUser,
     getMe,
     getNewToken,
-    changePassword,
-    logoutUser
+    changePassword
 }

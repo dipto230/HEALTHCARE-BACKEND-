@@ -135,7 +135,7 @@ const logoutUser = catchAsync(
             sameSite: "none"
 
         });
-        CookieUtils.clearCookie(res, 'better-auth.session_token', {
+        CookieUtils.clearCookie(res, 'better-auth-session_token', {
             httpOnly: true,
             secure: true,
             sameSite: "none"

@@ -135,7 +135,7 @@ const logoutUser = catchAsync(
             sameSite: "none"
 
         });
-        CookieUtils.clearCookie(res, 'better-auth.session_token', {
+        CookieUtils.clearCookie(res, 'better-auth-session_token', {
             httpOnly: true,
             secure: true,
             sameSite: "none"
@@ -144,7 +144,7 @@ const logoutUser = catchAsync(
             httpStatusCode:status.OK,
             success:true,
             message:"User logged out successfully",
-            data:result
+            data:
         })
 
     }
@@ -155,6 +155,5 @@ export const AuthController = {
     loginUser,
     getMe,
     getNewToken,
-    changePassword,
-    logoutUser
+    changePassword
 }

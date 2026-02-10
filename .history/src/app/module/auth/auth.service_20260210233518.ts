@@ -271,7 +271,7 @@ const logoutUser = async (sessionToken: string) => {
             Authorization : `Bearer ${sessionToken}`
         })
     })
-    return result
+    
 }
 
 
@@ -280,6 +280,5 @@ export const AuthService = {
     loginUser,
     getMe,
     getNewToken,
-    changePassword,
-    logoutUser
+    changePassword
 }
