@@ -1,0 +1,8 @@
+interface ILoginUserPayload {
+    email: string;
+    password: string;
+}
+
+interface  IRegisterPatientPayload{
+    
+}
