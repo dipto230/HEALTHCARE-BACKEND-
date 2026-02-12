@@ -1,0 +1,38 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
+import nodemailer from "nodemailer"
+import { envVars } from "../../config/env"
+import AppError from "../middleware/AppError";
+import status from "http-status";
+
+const transporter = nodemailer.createTransport({
+    host: envVars.EMAIL_SENDER.SMTP_HOST,
+    secure: true,
+    auth: {
+        user: envVars.EMAIL_SENDER.SMTP_USER,
+        pass:envVars.EMAIL_SENDER.SMTP_PASS
+    },
+    port: Number(envVars.EMAIL_SENDER.SMTP_PORT)
+})
+
+interface SendEmailOptions{
+    to:string;
+    subject:string;
+    templateName: string;
+    templateData: Record<string, any>;
+    attachments?: {
+        filename: string;
+        content: Buffer | string;
+        contentType: string;
+    }
+    
+}
+
+export const sendEmail = async ({subject,templateData, to, templateName, attachments }: SendEmailOptions) => {
+    try {
+        
+    } catch (error: any) {
+        console.log("Email sending error", error.message);
+        throw new AppError(status.INTERNAL_SERVER_ERROR, )
+        
+    }
+}
