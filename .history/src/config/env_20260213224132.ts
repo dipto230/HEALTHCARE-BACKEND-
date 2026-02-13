@@ -98,11 +98,7 @@ const loadEnvVariables = (): EnvConfig => {
         GOOGLE_CALLBACK_URL:process.env.GOOGLE_CALLBACK_URL as string,
         FRONTEND_URL: process.env.FRONTEND_URL as string,
         CLOUDINARY: {
-            CLOUDINARY_CLOUD_NAME: process.env.CLOUDINARY_CLOUD_NAME as string,
-            CLOUDINARY_API_KEY: process.env.CLOUDINARY_API_KEY as string,
-            CLOUDINARY_API_SECRET:process.env.CLOUDINARY_API_SECRET as string,
-            
-            
+            CLOUDINARY_CLOUD_NAME:process.env.
             
         },
 
