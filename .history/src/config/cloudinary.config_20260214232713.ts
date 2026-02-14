@@ -48,7 +48,7 @@ export const uploadFileToCloudinary = async (
                 }
                   resolve(result as UploadApiResponse)
             }
-        ).end(buffer)
+        )
     })
     
 }

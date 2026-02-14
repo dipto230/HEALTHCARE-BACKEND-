@@ -43,12 +43,9 @@ export const uploadFileToCloudinary = async (
                 folder: `HEALTH_CARE_FOR_PH/${folder}`
             },
             (error, result) => {
-                if(error){
-                    return reject(new AppError(status.INTERNAL_SERVER_ERROR,"Failed to upload file to cloudinary"))
-                }
-                  resolve(result as UploadApiResponse)
+                if
             }
-        ).end(buffer)
+        )
     })
     
 }

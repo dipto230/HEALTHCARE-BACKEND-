@@ -37,18 +37,7 @@ export const uploadFileToCloudinary = async (
 
     const folder = extension === "pdf" ? "pdfs" : "images";
     return new Promise((resolve, reject) => {
-        cloudinary.uploader.upload_stream(
-            {   resource_type: "auto",
-                public_id: `HEALTH_CARE_FOR_PH/${folder}/${uniqueName}`,
-                folder: `HEALTH_CARE_FOR_PH/${folder}`
-            },
-            (error, result) => {
-                if(error){
-                    return reject(new AppError(status.INTERNAL_SERVER_ERROR,"Failed to upload file to cloudinary"))
-                }
-                  resolve(result as UploadApiResponse)
-            }
-        ).end(buffer)
+        cloudinary.uploader.upload
     })
     
 }
