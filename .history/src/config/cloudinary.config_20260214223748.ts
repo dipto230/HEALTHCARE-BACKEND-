@@ -1,7 +1,6 @@
 import { v2 as cloudinary } from "cloudinary"
 import { envVars } from "./env"
 import AppError from "../app/middleware/AppError";
-import status from "http-status";
 
 
 cloudinary.config({
@@ -26,7 +25,7 @@ export const deleteFileFromCloudinary = async (url: string) => {
 
     }catch(error){
         console.log("Error deleting file from cloudinary:", error);
-        throw new AppError(status.INTERNAL_SERVER_ERROR, "Failed to delete file from cloudinary")
+        throw new AppError()
     }
 
 

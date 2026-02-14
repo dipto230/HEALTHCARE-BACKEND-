@@ -1,7 +1,5 @@
 import { v2 as cloudinary } from "cloudinary"
 import { envVars } from "./env"
-import AppError from "../app/middleware/AppError";
-import status from "http-status";
 
 
 cloudinary.config({
@@ -11,8 +9,7 @@ cloudinary.config({
 })
 
 export const deleteFileFromCloudinary = async (url: string) => {
-    try{
-            const regex = /\/v\d+\/(.+?)(?:\.[a-zA-Z0-9]+)+$/;
+    const regex = /\/v\d+\/(.+?)(?:\.[a-zA-Z0-9]+)+$/;
     const match = url.match(regex)
     if (match && match[1]) {
         const publicId = match[1];
@@ -23,12 +20,6 @@ export const deleteFileFromCloudinary = async (url: string) => {
         )
         console.log(`File ${publicId} deleted from cloudinary`)
     }
-
-    }catch(error){
-        console.log("Error deleting file from cloudinary:", error);
-        throw new AppError(status.INTERNAL_SERVER_ERROR, "Failed to delete file from cloudinary")
-    }
-
 
 
 }

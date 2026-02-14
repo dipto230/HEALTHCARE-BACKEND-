@@ -26,7 +26,7 @@ export const deleteFileFromCloudinary = async (url: string) => {
 
     }catch(error){
         console.log("Error deleting file from cloudinary:", error);
-        throw new AppError(status.INTERNAL_SERVER_ERROR, "Failed to delete file from cloudinary")
+        throw new AppError(status.INTERNAL_SERVER_ERROR, "")
     }
 
 
