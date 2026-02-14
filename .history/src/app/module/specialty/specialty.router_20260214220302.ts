@@ -12,7 +12,7 @@ const router = Router();
 
  router.post('/', ///checkAuth(Role.ADMIN, Role.SUPER_ADMIN),
      multerUpload.single("file"),
-    validateRequest(SpecialtyValidation.createSpecialtyZodSchema),
+    validateRequest(SpecialtyValidation.cre),
     SpecialtyController.createSpecialty);
 router.get('/',checkAuth(Role.ADMIN, Role.SUPER_ADMIN, Role.DOCTOR, Role.PATIENT), SpecialtyController.getAllSpecialties);
 router.delete('/:id',checkAuth(Role.ADMIN, Role.SUPER_ADMIN), SpecialtyController.deleteSpecialty);

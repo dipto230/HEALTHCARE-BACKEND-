@@ -5,7 +5,6 @@ import { sendResponse } from "../../shared/sendResponse";
 
 const createSpecialty = async (req: Request, res: Response) => {
   console.log(req.body)
-  console.log(req.file)
     try {
       //  const payload = req.body;
       const payload = {
