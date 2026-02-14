@@ -5,11 +5,7 @@ import AppError from "../../middleware/AppError"
 
 const getAllDoctors = async () => {
     const doctors = await prisma.doctor.findMany({
-        where: {
-            isDeleted: false,
-         
-
-        },
+        where
         include: {
             user: true,
             specialties: {
