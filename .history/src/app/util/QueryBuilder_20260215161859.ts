@@ -258,6 +258,6 @@ export class QueryBuilder<
                     
             }
         });
-        return Object.keys(rangeQuery).length > 0 ? rangeQuery : value;
+        return 
     }
 }

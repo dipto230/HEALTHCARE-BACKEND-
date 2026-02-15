@@ -230,18 +230,18 @@ export class QueryBuilder<
         const rangeQuery: Record<string, string | number | (string | number)[]> = {
         
         };
-        Object.keys(value).forEach((operator) => {
+        Object.keys(value).forEach((operator)=>{
             const operatorValue = value[operator]
-            const parsedValue: string | number = typeof operatorValue === 'string' && !isNaN(Number(operatorValue)) ? Number(operatorValue) : operatorValue;
+            const parsedValue: string | number  = typeof operatorValue === 'string' && !isNaN(Number(operatorValue)) ? Number(operatorValue) : operatorValue;
             switch (operator) {
                 case 'lt':
-                case 'lte':
+                case  'lte':
                 case 'gt':
                 case 'gte':
                 case 'equals':
-                case 'not':
-                case 'contains':
-                case 'startsWith':
+                case  'not':
+                case  'contains':
+                case  'startsWith':
                 case 'endsWith':
                     rangeQuery[operator] = parsedValue;
                     break;
@@ -253,11 +253,9 @@ export class QueryBuilder<
                         rangeQuery[operator] = [parsedValue]
                     }
                     break;
-                default:
-                    break;
+                default
                     
             }
-        });
-        return Object.keys(rangeQuery).length > 0 ? rangeQuery : value;
+        })
     }
 }

@@ -226,38 +226,7 @@ export class QueryBuilder<
         }
         return value
     }
-    private parseRangeFilter(value: Record<string, string | number>): PrismaNumberFilter | PrismaStringFilter| Record<string, unknown>{
-        const rangeQuery: Record<string, string | number | (string | number)[]> = {
+    private parseRangeFilter(value: Record<string, unknown>): PrismaNumberFilter | PrismaStri{
         
-        };
-        Object.keys(value).forEach((operator) => {
-            const operatorValue = value[operator]
-            const parsedValue: string | number = typeof operatorValue === 'string' && !isNaN(Number(operatorValue)) ? Number(operatorValue) : operatorValue;
-            switch (operator) {
-                case 'lt':
-                case 'lte':
-                case 'gt':
-                case 'gte':
-                case 'equals':
-                case 'not':
-                case 'contains':
-                case 'startsWith':
-                case 'endsWith':
-                    rangeQuery[operator] = parsedValue;
-                    break;
-                case 'in':
-                case 'notIn':
-                    if (Array.isArray(operatorValue)) {
-                        rangeQuery[operator] = operatorValue
-                    } else {
-                        rangeQuery[operator] = [parsedValue]
-                    }
-                    break;
-                default:
-                    break;
-                    
-            }
-        });
-        return Object.keys(rangeQuery).length > 0 ? rangeQuery : value;
     }
 }

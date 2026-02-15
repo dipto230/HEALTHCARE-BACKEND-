@@ -1,5 +1,5 @@
 
-import { IQueryConfig, IQueryParams, PrismaCountArgs, PrismaFindManyArgs, PrismaModelDelegate, PrismaNumberFilter, PrismaStringFilter, PrismaWhereConditions } from "../interfaces/query.interface"
+import { IQueryConfig, IQueryParams, PrismaCountArgs, PrismaFindManyArgs, PrismaModelDelegate, PrismaStringFilter, PrismaWhereConditions } from "../interfaces/query.interface"
 
 export class QueryBuilder<
     T,
@@ -110,7 +110,7 @@ export class QueryBuilder<
         })
 
         const queryWhere = this.query.where as Record<string, unknown>;
-        const countQueryWhere = this.CountQuery.where as Record<string, unknown>;
+        const countQueryWhere = this.countQuery.where as Record<string, unknown>;
 
         Object.keys(filterParams).forEach((key) => {
             const value = filterParams[key];
@@ -210,54 +210,5 @@ export class QueryBuilder<
             countQueryWhere[key] = this.parseFilterValue(value);
         })
         return this;
-    }
-    private parseFilterValue(value: unknown):unknown{
-        if(value === 'true'){
-            return true
-        }
-        if(value === 'false'){
-            return false
-        }
-        if(typeof value === 'string' && !isNaN(Number(value)) && value != ""){
-            return Number(value)
-        }
-        if (Array.isArray(value)) {
-            return {in : value.map((item)=>this.parseFilterValue(item))}
-        }
-        return value
-    }
-    private parseRangeFilter(value: Record<string, string | number>): PrismaNumberFilter | PrismaStringFilter| Record<string, unknown>{
-        const rangeQuery: Record<string, string | number | (string | number)[]> = {
-        
-        };
-        Object.keys(value).forEach((operator) => {
-            const operatorValue = value[operator]
-            const parsedValue: string | number = typeof operatorValue === 'string' && !isNaN(Number(operatorValue)) ? Number(operatorValue) : operatorValue;
-            switch (operator) {
-                case 'lt':
-                case 'lte':
-                case 'gt':
-                case 'gte':
-                case 'equals':
-                case 'not':
-                case 'contains':
-                case 'startsWith':
-                case 'endsWith':
-                    rangeQuery[operator] = parsedValue;
-                    break;
-                case 'in':
-                case 'notIn':
-                    if (Array.isArray(operatorValue)) {
-                        rangeQuery[operator] = operatorValue
-                    } else {
-                        rangeQuery[operator] = [parsedValue]
-                    }
-                    break;
-                default:
-                    break;
-                    
-            }
-        });
-        return Object.keys(rangeQuery).length > 0 ? rangeQuery : value;
     }
 }
