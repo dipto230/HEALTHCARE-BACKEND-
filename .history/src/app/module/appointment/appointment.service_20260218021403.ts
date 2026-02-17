@@ -1,5 +1,5 @@
 import status from "http-status";
-import { AppointmentStatus, PaymentStatus, Role } from "../../../generated/prisma/enums";
+import { AppointmentStatus, Role } from "../../../generated/prisma/enums";
 import { IRequestUser } from "../../interfaces/request.user.interface";
 import { prisma } from "../../lib/prisma";
 import AppError from "../../middleware/AppError";
@@ -445,7 +445,6 @@ export const AppointmentService = {
     getAllAppointments,
     bookAppointmentWithPayLater,
     initiatePayment,
-    cancelUnpaidAppointments
 
 
 
