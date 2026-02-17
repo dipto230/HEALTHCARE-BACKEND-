@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
 import express, {Application,Request,Response} from "express";
 
 
@@ -16,7 +15,6 @@ import { envVars } from "./config/env";
 import qs from "qs"
 import { PaymentController } from "./app/module/payment/payment.controller";
 import cron from "node-cron"
-import { AppointmentService } from "./app/module/appointment/appointment.service";
 
 const app: Application = express();
 app.set("query parser", (str:string)=> qs.parse(str))

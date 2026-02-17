@@ -1,5 +1,4 @@
 import app from "./app"
-import { seedSuperAdmin } from "./app/util/seed";
 import { envVars } from "./config/env";
 
 
