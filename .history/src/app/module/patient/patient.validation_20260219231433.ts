@@ -35,33 +35,25 @@ const updatePatientProfileZodSchema = z.object({
         reportLink: z.url().optional(),
     })).optional().refine((reports) => {
         if (!reports || reports.length === 0) return true;
-          for (const report of reports) {
-
-            // case-1
-            if(report.shouldDelete === true && !report.reportId) {
+        for (const report of reports) {
+            if (report.shouldDelete === true && !report.reportId) {
                 return false; // If shouldDelete is true, reportId must be provided
             }
-
-            // case-2
-            if(report.reportId && !report.shouldDelete) {
+            if (report.reportId && !report.shouldDelete) {
                 return false; // If reportId is provided, shouldDelete must be true
             }
-
-            //case-3
-            if(report.reportName && !report.reportLink) {
+            if (report.reportName && !report.reportLink) {
                 return false; // If reportName is provided, reportLink must also be provided
             }
 
             //case-4
-            if(report.reportLink && !report.reportName) {
+            if (report.reportLink && !report.reportName) {
                 return false; // If reportLink is provided, reportName must also be provided
             }
 
-            return true; // If none of the above conditions are violated, it's valid
+            return true;
         }
-    }, {
-        message :"Invalid medical report data. If shouldDelete is true, reportId must be provided. If reportId is provided, shouldDelete must be true. If reportName is provided, reportLink must also be provided and vice versa"
-    
+    }
     })
 })
 

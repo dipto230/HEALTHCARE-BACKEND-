@@ -60,7 +60,7 @@ const updatePatientProfileZodSchema = z.object({
             return true; // If none of the above conditions are violated, it's valid
         }
     }, {
-        message :"Invalid medical report data. If shouldDelete is true, reportId must be provided. If reportId is provided, shouldDelete must be true. If reportName is provided, reportLink must also be provided and vice versa"
+        message :""
     
     })
 })
