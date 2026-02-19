@@ -61,7 +61,6 @@ const updateMyProfile = async (user: IRequestUser, payload: IUpdatePatientProfil
                 }
                  })
                 
-                
             }
            
       

@@ -49,21 +49,13 @@ const updateMyProfile = async (user: IRequestUser, payload: IUpdatePatientProfil
                         typeof healthDataToSave.dateOfBirth === "string" ? healthDataToSave.dateOfBirth : undefined
                     ) as Date;
                 }
-                
-                 await tx.patientHealthData.upsert({
+            }
+            await tx.patientHealthData.upsert({
                 where: {
                      patientId: patientData.id
                 },
-                update: healthDataToSave,
-                 create: {
-                    patientId: patientData.id,
-                    ...healthDataToSave
-                }
-                 })
-                
-                
-            }
-           
+                update:
+            })
       
         }
     })

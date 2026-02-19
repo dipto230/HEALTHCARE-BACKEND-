@@ -1,7 +1,6 @@
 import { IRequestUser } from "../../interfaces/request.user.interface";
 import { prisma } from "../../lib/prisma";
 import { IUpdatePatientHealthDataPayload, IUpdatePatientProfilePayload } from "./patient.interface";
-import { convertToDateTime } from "./patient.utils";
 
 const updateMyProfile = async (user: IRequestUser, payload: IUpdatePatientProfilePayload) => {
     const patientData = await prisma.patient.findUniqueOrThrow({
@@ -42,28 +41,9 @@ const updateMyProfile = async (user: IRequestUser, payload: IUpdatePatientProfil
             };
             if (payload.patientHealthData) {
                 const healthDataToSave: IUpdatePatientHealthDataPayload = {
-                    ...payload.patientHealthData,
-                };
-                if (payload.patientHealthData.dateOfBirth) {
-                    healthDataToSave.dateOfBirth = convertToDateTime(
-                        typeof healthDataToSave.dateOfBirth === "string" ? healthDataToSave.dateOfBirth : undefined
-                    ) as Date;
+                    ...payload.
                 }
-                
-                 await tx.patientHealthData.upsert({
-                where: {
-                     patientId: patientData.id
-                },
-                update: healthDataToSave,
-                 create: {
-                    patientId: patientData.id,
-                    ...healthDataToSave
-                }
-                 })
-                
-                
             }
-           
       
         }
     })

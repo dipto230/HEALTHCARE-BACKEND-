@@ -45,25 +45,9 @@ const updateMyProfile = async (user: IRequestUser, payload: IUpdatePatientProfil
                     ...payload.patientHealthData,
                 };
                 if (payload.patientHealthData.dateOfBirth) {
-                    healthDataToSave.dateOfBirth = convertToDateTime(
-                        typeof healthDataToSave.dateOfBirth === "string" ? healthDataToSave.dateOfBirth : undefined
-                    ) as Date;
+                    healthDataToSave.dateOfBirth = convertToDateTime
                 }
-                
-                 await tx.patientHealthData.upsert({
-                where: {
-                     patientId: patientData.id
-                },
-                update: healthDataToSave,
-                 create: {
-                    patientId: patientData.id,
-                    ...healthDataToSave
-                }
-                 })
-                
-                
             }
-           
       
         }
     })

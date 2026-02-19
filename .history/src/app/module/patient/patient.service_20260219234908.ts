@@ -50,18 +50,6 @@ const updateMyProfile = async (user: IRequestUser, payload: IUpdatePatientProfil
                     ) as Date;
                 }
                 
-                 await tx.patientHealthData.upsert({
-                where: {
-                     patientId: patientData.id
-                },
-                update: healthDataToSave,
-                 create: {
-                    patientId: patientData.id,
-                    ...healthDataToSave
-                }
-                 })
-                
-                
             }
            
       
