@@ -16,7 +16,7 @@ router.patch("/update-my-profile",
     checkAuth(Role.PATIENT),
     multerUpload.fields([
         {name:"profilePhoto", maxCount:1},
-        {name:"medicalReports", maxCount:5}
+        {name:"medicalReport", maxCount:5}
     ]),
 
     updateMyPatientProfileMiddleware,
@@ -25,4 +25,4 @@ router.patch("/update-my-profile",
 
 )
 
-export const PatientRoutes = router;
+export const Patient

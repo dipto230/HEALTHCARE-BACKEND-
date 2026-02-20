@@ -20,6 +20,6 @@ const updateMyProfile = catchAsync(async (req: Request, res: Response) => {
     });
 });
 
-export const patientController = {
-    updateMyProfile
+export const patientController ={
+    
 }

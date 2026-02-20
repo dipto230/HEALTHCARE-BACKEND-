@@ -13,13 +13,9 @@ const updateMyProfile = catchAsync(async (req: Request, res: Response) => {
     sendResponse(res, {
         success: true,
         httpStatusCode: status.OK,
-        message: "Profile updated successfully",
+        message:"Profile updated successfully",
         
-        data: result
+        data:result
 
-    });
-});
-
-export const patientController = {
-    updateMyProfile
-}
+    })
+})

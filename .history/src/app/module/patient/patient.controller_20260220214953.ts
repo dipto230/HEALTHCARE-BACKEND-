@@ -11,15 +11,8 @@ const updateMyProfile = catchAsync(async (req: Request, res: Response) => {
     const payload = req.body;
     const result = await PatientService.updateMyProfile(user, payload)
     sendResponse(res, {
-        success: true,
         httpStatusCode: status.OK,
-        message: "Profile updated successfully",
-        
-        data: result
+        message:""
 
-    });
-});
-
-export const patientController = {
-    updateMyProfile
-}
+    })
+})
