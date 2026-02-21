@@ -1,4 +1,5 @@
 import status from "http-status";
+import { v7 as uuidv7 } from "uuid"; 
 import { AppointmentStatus, PaymentStatus, Role } from "../../../generated/prisma/enums";
 import { IRequestUser } from "../../interfaces/request.user.interface";
 import { prisma } from "../../lib/prisma";
