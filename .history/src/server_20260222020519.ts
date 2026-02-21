@@ -1,0 +1,18 @@
+import app from "./app"
+import { seedSuperAdmin } from "./app/util/seed";
+import { envVars } from "./config/env";
+
+
+let server : Server;
+const bootstrap = async() => {
+    try {
+        await seedSuperAdmin()
+        app.listen(envVars.PORT, () => {
+              console.log(`server is running on http://localhost:${envVars.PORT}`);
+        })
+    } catch (error) {
+        console.log('Failed to start server:', error)
+    }
+}
+
+bootstrap();

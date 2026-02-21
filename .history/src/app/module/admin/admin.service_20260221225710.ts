@@ -1,9 +1,9 @@
 import status from "http-status";
-import { Role, UserStatus } from "../../../generated/prisma/enums";
+import { UserStatus } from "../../../generated/prisma/enums";
 
 
 import { prisma } from "../../lib/prisma";
-import { IChangeUserRolePayload, IChangeUserStatusPayload, IUpdateAdminPayload } from "./admin.interface";
+import { IUpdateAdminPayload } from "./admin.interface";
 import AppError from "../../middleware/AppError";
 import { IRequestUser } from "../../interfaces/request.user.interface";
 
@@ -218,7 +218,4 @@ export const AdminService = {
     getAdminById,
     updateAdmin,
     deleteAdmin,
-    changeUserStatus,
-    changeUserRole
-
 }

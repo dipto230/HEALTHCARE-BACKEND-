@@ -1,5 +1,3 @@
-import { Role, UserStatus } from "../../../generated/prisma/enums";
-
 export interface IUpdateAdminPayload {
     admin?: {
         name?: string;
