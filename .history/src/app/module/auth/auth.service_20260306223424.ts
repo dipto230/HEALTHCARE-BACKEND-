@@ -6,10 +6,6 @@ import { IChangePasswordPayload, ILoginUserPayload, IRegisterPatientPayload } fr
 import { auth } from "../../lib/auth";
 import AppError from "../../middleware/AppError";
 import { tokenUtils } from "../../util/token";
-import { prisma } from "../../lib/prisma";
-import { IRequestUser } from "../../interfaces/request.user.interface";
-import { jwtUtils } from "../../util/jwt";
-import { envVars } from "../../../config/env";
 
 
 
@@ -34,7 +30,7 @@ const registerPatient = async (payload: IRegisterPatientPayload) => {
 
     //TODO : Create Patient Profile In Transaction After Sign Up Of Patient In USer Model
     try {
-        const patient = await prisma.$transaction(async (tx) => {
+        const patient = await prism.$transaction(async (tx) => {
 
             const patientTx = await tx.patient.create({
                 data: {
@@ -97,7 +93,7 @@ const loginUser = async (payload: ILoginUserPayload) => {
         }
     })
 
-    if (data.user.status === UserStatus.BLOCK) {
+    if (data.user.status === UserStatus.BLOCKED) {
         throw new AppError(status.FORBIDDEN, "User is blocked");
     }
 

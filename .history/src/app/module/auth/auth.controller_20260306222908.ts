@@ -8,9 +8,6 @@ import { sendResponse } from "../../shared/sendResponse";
 
 import { AuthService } from "./auth.service";
 import { envVars } from "../../../config/env";
-import { tokenUtils } from "../../util/token";
-import AppError from "../../middleware/AppError";
-import { CookieUtils } from "../../util/cookie";
 
 const registerPatient = catchAsync(
     async (req: Request, res: Response) => {

@@ -1,15 +1,14 @@
 import status from "http-status";
 import { JwtPayload } from "jsonwebtoken";
 import { UserStatus } from "../../../generated/prisma/enums";
-
-import { IChangePasswordPayload, ILoginUserPayload, IRegisterPatientPayload } from "./auth.interface";
+import { envVars } from "../../config/env";
+import AppError from "../../errorHelpers/AppError";
+import { IRequestUser } from "../../interfaces/requestUser.interface";
 import { auth } from "../../lib/auth";
-import AppError from "../../middleware/AppError";
-import { tokenUtils } from "../../util/token";
 import { prisma } from "../../lib/prisma";
-import { IRequestUser } from "../../interfaces/request.user.interface";
-import { jwtUtils } from "../../util/jwt";
-import { envVars } from "../../../config/env";
+import { jwtUtils } from "../../utils/jwt";
+import { tokenUtils } from "../../utils/token";
+import { IChangePasswordPayload, ILoginUserPayload, IRegisterPatientPayload } from "./auth.interface";
 
 
 
@@ -97,7 +96,7 @@ const loginUser = async (payload: ILoginUserPayload) => {
         }
     })
 
-    if (data.user.status === UserStatus.BLOCK) {
+    if (data.user.status === UserStatus.BLOCKED) {
         throw new AppError(status.FORBIDDEN, "User is blocked");
     }
 

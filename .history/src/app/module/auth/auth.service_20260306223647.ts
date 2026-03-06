@@ -97,7 +97,7 @@ const loginUser = async (payload: ILoginUserPayload) => {
         }
     })
 
-    if (data.user.status === UserStatus.BLOCK) {
+    if (data.user.status === UserStatus.BLOCKE) {
         throw new AppError(status.FORBIDDEN, "User is blocked");
     }
 
