@@ -1,0 +1,15 @@
+import { EmbeddingService } from "./embedding.service";
+
+export class IndexingService{
+    private embeddingService: EmbeddingService;
+    constructor(){
+        this.embeddingService = new EmbeddingService()
+    }
+    async indexDoctorsData() {
+        try{
+
+        }catch(error){
+            console.log(er)
+        }
+    }
+}

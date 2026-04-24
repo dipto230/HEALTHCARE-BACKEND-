@@ -8,7 +8,7 @@ const getStats = async (req:Request, res:Response) => {
     res.status(200).json({message:"connected rag apis "})
 }
 const ingestDoctors = catchAsync(async (req: Request, res: Response) => {
-    const result = await RAGService
+    const result = await
 
     sendResponse(res, {
         success: true,

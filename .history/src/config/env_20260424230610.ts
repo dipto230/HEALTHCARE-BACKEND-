@@ -133,7 +133,7 @@ const loadEnvVariables = (): EnvConfig => {
             OPENROUTER_API_KEY: process.env.OPENROUTER_API_KEY as string,
             OPENROUTER_EMBEDDING_MODEL: process.env.OPENROUTER_EMBEDDING_MODEL as string,
             OPENROUTER_LLM_MODEL: process.env.OPENROUTER_LLM_MODEL as string,
-        },
+        }
 
         
 
