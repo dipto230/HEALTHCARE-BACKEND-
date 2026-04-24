@@ -1,0 +1,69 @@
+#docker network create ph-net
+
+#docker volume create ph-pg-data
+#docker volume create server-node-modules
+#docker volume create server-logs
+#docker volume create client-node-modules
+
+
+#docker run -d --name ph-db --network ph-net -e POSTGRES_USER=postgres -e POSTGRES_PASSWORD=secret123 -e POSTGRES_DB=ph_health -v ph-pg-data:/var/lib/postgresql/data postgres:16-alpine
+
+services:
+  ph-db:
+    image: postgres:16-alpine
+    container_name: ph-db
+    networks:
+      - ph-net
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: "103148"
+      POSTGRES_DB: ph_health
+    volumes:
+      - ph-pg-data:/var/lib/postgresql/data
+    restart: always
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres -d ph_health"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+      start_period: 10s
+  ph-server:
+    container_name: ph-server
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: unless-stopped
+    depends_on:
+      ph-db:
+        condition: service_healthy
+    networks:
+      - ph-net
+    env_file:
+      .env
+    environment:
+       CHOKIDAR_USEPOLLING:"1"
+       CHOKIDAR_INTERVAL: "3000"
+    ports:
+      - "5000":"5000"
+    working_dir: /app
+    volumes:
+       - .:/app
+       
+
+
+      
+
+      
+
+
+
+
+networks:
+  ph-net:
+    driver: bridge
+
+volumes:
+  ph-pg-data:
+  server-node-modules:
+  server-logs:
+  client-node-modules:

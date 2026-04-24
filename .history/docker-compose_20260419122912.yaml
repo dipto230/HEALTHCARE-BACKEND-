@@ -1,0 +1,6 @@
+docker network create ph-net
+
+docker volume create ph-pg-data
+docker volume create server-node-modules
+docker volume create server-logs
+docker volume 

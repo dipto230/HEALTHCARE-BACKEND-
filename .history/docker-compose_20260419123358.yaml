@@ -1,0 +1,18 @@
+#docker network create ph-net
+
+#docker volume create ph-pg-data
+#docker volume create server-node-modules
+#docker volume create server-logs
+#docker volume create client-node-modules
+
+
+#docker run -d --name ph-db --network ph-net -e POSTGRES_USER=postgres -e POSTGRES_PASSWORD=secret123 -e POSTGRES_DB=ph_health -v ph-pg-data:/var/lib/postgresql/data postgres:16-alpine
+
+networks:
+  ph-net:
+    driver: bridge
+
+volumes:
+  ph-pg-data:
+  server-node-modules:
+  server-logs:
