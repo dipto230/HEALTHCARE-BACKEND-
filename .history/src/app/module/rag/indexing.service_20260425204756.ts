@@ -48,24 +48,8 @@ export class IndexingService {
           specialties: doctor.specialties.map((ds) => ds.specialty.title),
           averageRating: doctor.averageRating,
           experience: doctor.experience,
-          };
-          const chunkKey = `doctor-${doctor.id}`;
-              await this.indexDocument(
-          chunkKey,
-          "DOCTOR",
-          doctor.id,
-          content,
-          doctor.name,
-          metadata,
-          );
-         indexedCount++;  
-        }
-        console.log(`Successfully Indexed ${indexedCount} doctors.`);
-          return {
-        success: true,
-        message: `Successfully Indexed ${indexedCount} doctors.`,
-        indexedCount,
-      };
+        };
+      }
     } catch (error) {
       console.log(error);
     }

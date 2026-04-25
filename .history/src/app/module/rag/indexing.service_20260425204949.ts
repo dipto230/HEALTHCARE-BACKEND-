@@ -59,13 +59,7 @@ export class IndexingService {
           metadata,
           );
          indexedCount++;  
-        }
-        console.log(`Successfully Indexed ${indexedCount} doctors.`);
-          return {
-        success: true,
-        message: `Successfully Indexed ${indexedCount} doctors.`,
-        indexedCount,
-      };
+      }
     } catch (error) {
       console.log(error);
     }
