@@ -37,7 +37,7 @@ export class IndexingService {
         )
         VALUES
         (
-            ${Prisma.raw("gen_random_uuid()")},
+            ${Prisma.raw("gen_random_uuid()")}
             ${chunkKey},
           ${sourceType},
           ${sourceId},

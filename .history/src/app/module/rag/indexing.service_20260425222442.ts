@@ -37,7 +37,7 @@ export class IndexingService {
         )
         VALUES
         (
-            ${Prisma.raw("gen_random_uuid()")},
+            ${Prisma.raw("gen_random_uuid()")}
             ${chunkKey},
           ${sourceType},
           ${sourceId},
@@ -126,8 +126,7 @@ export class IndexingService {
         indexedCount,
       };
     } catch (error) {
-        console.log(error);
-        throw error;
+      console.log(error);
     }
   }
 }

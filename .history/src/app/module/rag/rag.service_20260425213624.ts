@@ -9,11 +9,7 @@ export class RAGService {
     constructor() {
         this.embeddingService = new EmbeddingService()
         this.indexingService = new IndexingService()
-
-    }
-
-    async ingestDoctorsData() {
-        return this.indexingService.indexDoctorsData();
+        
     }
 
 

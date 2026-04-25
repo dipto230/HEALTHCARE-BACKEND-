@@ -1,5 +1,4 @@
 import { EmbeddingService } from "./embedding.service";
-import { IndexingService } from "./indexing.service";
 
 export class RAGService {
     private embeddingService: EmbeddingService;
@@ -8,12 +7,7 @@ export class RAGService {
 
     constructor() {
         this.embeddingService = new EmbeddingService()
-        this.indexingService = new IndexingService()
-
-    }
-
-    async ingestDoctorsData() {
-        return this.indexingService.indexDoctorsData();
+        this.indexingService = new Index
     }
 
 

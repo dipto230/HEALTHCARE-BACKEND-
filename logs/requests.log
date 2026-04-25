@@ -17,3 +17,3170 @@
     "contentType": "application/json"
   }
 }
+{
+  "time": "2026-04-25T16:21:21.430Z",
+  "method": "POST",
+  "url": "/api/v1/auth/login",
+  "status": 200,
+  "duration": "5780ms",
+  "ip": "::1",
+  "userAgent": "PostmanRuntime/7.51.1",
+  "query": {},
+  "params": {},
+  "body": {
+    "email": "seuperadmin@gmail.com",
+    "password": "***"
+  },
+  "headers": {
+    "contentType": "application/json"
+  }
+}
+{
+  "time": "2026-04-25T16:21:52.690Z",
+  "method": "POST",
+  "url": "/api/v1/specialties",
+  "status": 201,
+  "duration": "10433ms",
+  "ip": "::1",
+  "userAgent": "PostmanRuntime/7.51.1",
+  "query": {},
+  "params": {},
+  "body": {
+    "title": "Urology"
+  },
+  "headers": {
+    "contentType": "multipart/form-data; boundary=--------------------------461768497830365222779851"
+  }
+}
+{
+  "time": "2026-04-25T16:23:34.339Z",
+  "method": "POST",
+  "url": "/api/v1/specialties",
+  "status": 201,
+  "duration": "9031ms",
+  "ip": "::1",
+  "userAgent": "PostmanRuntime/7.51.1",
+  "query": {},
+  "params": {},
+  "body": {
+    "title": "Dermatology"
+  },
+  "headers": {
+    "contentType": "multipart/form-data; boundary=--------------------------533778674756441696353849"
+  }
+}
+{
+  "time": "2026-04-25T16:25:29.568Z",
+  "method": "POST",
+  "url": "/api/v1/specialties",
+  "status": 201,
+  "duration": "13393ms",
+  "ip": "::1",
+  "userAgent": "PostmanRuntime/7.51.1",
+  "query": {},
+  "params": {},
+  "body": {
+    "title": "Psychiatry"
+  },
+  "headers": {
+    "contentType": "multipart/form-data; boundary=--------------------------353575662390869299688126"
+  }
+}
+{
+  "time": "2026-04-25T16:26:30.738Z",
+  "method": "POST",
+  "url": "/api/v1/specialties",
+  "status": 201,
+  "duration": "7914ms",
+  "ip": "::1",
+  "userAgent": "PostmanRuntime/7.51.1",
+  "query": {},
+  "params": {},
+  "body": {
+    "title": "Neurosurgery"
+  },
+  "headers": {
+    "contentType": "multipart/form-data; boundary=--------------------------801232332761802928267638"
+  }
+}
+{
+  "time": "2026-04-25T16:28:08.088Z",
+  "method": "POST",
+  "url": "/api/v1/specialties",
+  "status": 201,
+  "duration": "8916ms",
+  "ip": "::1",
+  "userAgent": "PostmanRuntime/7.51.1",
+  "query": {},
+  "params": {},
+  "body": {
+    "title": "Ideogram"
+  },
+  "headers": {
+    "contentType": "multipart/form-data; boundary=--------------------------447522199124758443867532"
+  }
+}
+{
+  "time": "2026-04-25T16:29:04.635Z",
+  "method": "POST",
+  "url": "/api/v1/specialties",
+  "status": 201,
+  "duration": "9389ms",
+  "ip": "::1",
+  "userAgent": "PostmanRuntime/7.51.1",
+  "query": {},
+  "params": {},
+  "body": {
+    "title": "Endocrinology"
+  },
+  "headers": {
+    "contentType": "multipart/form-data; boundary=--------------------------138637170424229706213168"
+  }
+}
+{
+  "time": "2026-04-25T16:30:00.750Z",
+  "method": "POST",
+  "url": "/api/v1/specialties",
+  "status": 201,
+  "duration": "12169ms",
+  "ip": "::1",
+  "userAgent": "PostmanRuntime/7.51.1",
+  "query": {},
+  "params": {},
+  "body": {
+    "title": "Neurology"
+  },
+  "headers": {
+    "contentType": "multipart/form-data; boundary=--------------------------621532936670826223320364"
+  }
+}
+{
+  "time": "2026-04-25T16:32:21.407Z",
+  "method": "POST",
+  "url": "/api/v1/users/create-doctor",
+  "status": 201,
+  "duration": "13665ms",
+  "ip": "::1",
+  "userAgent": "PostmanRuntime/7.51.1",
+  "query": {},
+  "params": {},
+  "body": {
+    "password": "***",
+    "doctor": {
+      "name": "Dr. Fahim Ahmed",
+      "email": "fahim@healthmail.com",
+      "contactNumber": "01911223354",
+      "address": "Barisal, Bangladesh",
+      "registrationNumber": "BMDC-55660099",
+      "experience": 10,
+      "gender": "MALE",
+      "appointmentFee": 1000,
+      "qualification": "MBBS, MS (Orthopedics)",
+      "currentWorkingPlace": "Barisal Sher-e-Bangla Medical College Hospital",
+      "designation": "Orthopedic Surgeon"
+    },
+    "specialties": [
+      "019dc572-84a0-7298-a9d1-ed313b139069",
+      "019dc574-120e-70b6-92f5-97f58c5b6322"
+    ]
+  },
+  "headers": {
+    "contentType": "application/json"
+  }
+}
+{
+  "time": "2026-04-25T16:32:53.983Z",
+  "method": "POST",
+  "url": "/api/v1/users/create-doctor",
+  "status": 201,
+  "duration": "10294ms",
+  "ip": "::1",
+  "userAgent": "PostmanRuntime/7.51.1",
+  "query": {},
+  "params": {},
+  "body": {
+    "password": "***",
+    "doctor": {
+      "name": "Dr. Nusrat Jahan",
+      "email": "nusrat@healthmail.com",
+      "contactNumber": "01722334455",
+      "address": "Dhaka, Bangladesh",
+      "registrationNumber": "BMDC-44556677",
+      "experience": 8,
+      "gender": "FEMALE",
+      "appointmentFee": 900,
+      "qualification": "MBBS, FCPS (Gynecology)",
+      "currentWorkingPlace": "Dhaka Medical College Hospital",
+      "designation": "Gynecologist"
+    },
+    "specialties": [
+      "019dc575-d0e2-7064-bfdb-2da7afecf167"
+    ]
+  },
+  "headers": {
+    "contentType": "application/json"
+  }
+}
+{
+  "time": "2026-04-25T16:33:09.325Z",
+  "method": "POST",
+  "url": "/api/v1/users/create-doctor",
+  "status": 201,
+  "duration": "6764ms",
+  "ip": "::1",
+  "userAgent": "PostmanRuntime/7.51.1",
+  "query": {},
+  "params": {},
+  "body": {
+    "password": "***",
+    "doctor": {
+      "name": "Dr. Imran Hossain",
+      "email": "imran@healthmail.com",
+      "contactNumber": "01833445566",
+      "address": "Chittagong, Bangladesh",
+      "registrationNumber": "BMDC-77889911",
+      "experience": 12,
+      "gender": "MALE",
+      "appointmentFee": 1200,
+      "qualification": "MBBS, MD (Cardiology)",
+      "currentWorkingPlace": "Chittagong Medical College Hospital",
+      "designation": "Cardiologist"
+    },
+    "specialties": [
+      "019dc576-c318-77b2-b18a-f4a08b39dad6"
+    ]
+  },
+  "headers": {
+    "contentType": "application/json"
+  }
+}
+{
+  "time": "2026-04-25T16:33:50.037Z",
+  "method": "POST",
+  "url": "/api/v1/users/create-doctor",
+  "status": 201,
+  "duration": "12240ms",
+  "ip": "::1",
+  "userAgent": "PostmanRuntime/7.51.1",
+  "query": {},
+  "params": {},
+  "body": {
+    "password": "***",
+    "doctor": {
+      "name": "Dr. Sadia Rahman",
+      "email": "sadia@healthmail.com",
+      "contactNumber": "01955667788",
+      "address": "Rajshahi, Bangladesh",
+      "registrationNumber": "BMDC-99887766",
+      "experience": 7,
+      "gender": "FEMALE",
+      "appointmentFee": 850,
+      "qualification": "MBBS, DDV (Dermatology)",
+      "currentWorkingPlace": "Rajshahi Medical College Hospital",
+      "designation": "Dermatologist"
+    },
+    "specialties": [
+      "019dc578-4012-7346-a6df-8aac3eced7d3"
+    ]
+  },
+  "headers": {
+    "contentType": "application/json"
+  }
+}
+{
+  "time": "2026-04-25T16:34:08.919Z",
+  "method": "POST",
+  "url": "/api/v1/users/create-doctor",
+  "status": 201,
+  "duration": "9847ms",
+  "ip": "::1",
+  "userAgent": "PostmanRuntime/7.51.1",
+  "query": {},
+  "params": {},
+  "body": {
+    "password": "***",
+    "doctor": {
+      "name": "Dr. Tanvir Hasan",
+      "email": "tanvir@healthmail.com",
+      "contactNumber": "01677889900",
+      "address": "Sylhet, Bangladesh",
+      "registrationNumber": "BMDC-11224455",
+      "experience": 15,
+      "gender": "MALE",
+      "appointmentFee": 1300,
+      "qualification": "MBBS, MS (Neurology)",
+      "currentWorkingPlace": "Sylhet MAG Osmani Medical College",
+      "designation": "Neurologist"
+    },
+    "specialties": [
+      "019dc579-14aa-72c9-9358-de3da3ecdcb8"
+    ]
+  },
+  "headers": {
+    "contentType": "application/json"
+  }
+}
+{
+  "time": "2026-04-25T16:35:17.425Z",
+  "method": "POST",
+  "url": "/api/v1/users/create-doctor",
+  "status": 400,
+  "duration": "30ms",
+  "ip": "::1",
+  "userAgent": "PostmanRuntime/7.51.1",
+  "query": {},
+  "params": {},
+  "headers": {
+    "contentType": "application/json"
+  }
+}
+{
+  "time": "2026-04-25T16:36:36.373Z",
+  "method": "POST",
+  "url": "/api/v1/users/create-doctor",
+  "status": 201,
+  "duration": "11982ms",
+  "ip": "::1",
+  "userAgent": "PostmanRuntime/7.51.1",
+  "query": {},
+  "params": {},
+  "body": {
+    "password": "***",
+    "doctor": {
+      "name": "Dr. Tania Sultana",
+      "email": "tania10@healthmail.com",
+      "contactNumber": "01644556677",
+      "address": "Noakhali, Bangladesh",
+      "registrationNumber": "BMDC-55660010",
+      "experience": 5,
+      "gender": "FEMALE",
+      "appointmentFee": 780,
+      "qualification": "MBBS, MCPS",
+      "currentWorkingPlace": "Noakhali General Hospital",
+      "designation": "General Physician"
+    },
+    "specialties": [
+      "019dc575-d0e2-7064-bfdb-2da7afecf167"
+    ]
+  },
+  "headers": {
+    "contentType": "application/json"
+  }
+}
+{
+  "time": "2026-04-25T16:36:52.708Z",
+  "method": "POST",
+  "url": "/api/v1/users/create-doctor",
+  "status": 201,
+  "duration": "8042ms",
+  "ip": "::1",
+  "userAgent": "PostmanRuntime/7.51.1",
+  "query": {},
+  "params": {},
+  "body": {
+    "password": "***",
+    "doctor": {
+      "name": "Dr. Shafiul Alam",
+      "email": "shafiul9@healthmail.com",
+      "contactNumber": "01733445577",
+      "address": "Rangpur, Bangladesh",
+      "registrationNumber": "BMDC-55660009",
+      "experience": 13,
+      "gender": "MALE",
+      "appointmentFee": 1250,
+      "qualification": "MBBS, MD (Psychiatry)",
+      "currentWorkingPlace": "Rangpur Medical College Hospital",
+      "designation": "Psychiatrist"
+    },
+    "specialties": [
+      "019dc574-120e-70b6-92f5-97f58c5b6322"
+    ]
+  },
+  "headers": {
+    "contentType": "application/json"
+  }
+}
+{
+  "time": "2026-04-25T16:37:10.935Z",
+  "method": "POST",
+  "url": "/api/v1/users/create-doctor",
+  "status": 201,
+  "duration": "8828ms",
+  "ip": "::1",
+  "userAgent": "PostmanRuntime/7.51.1",
+  "query": {},
+  "params": {},
+  "body": {
+    "password": "***",
+    "doctor": {
+      "name": "Dr. Farzana Islam",
+      "email": "farzana8@healthmail.com",
+      "contactNumber": "01922334411",
+      "address": "Mymensingh, Bangladesh",
+      "registrationNumber": "BMDC-55660008",
+      "experience": 6,
+      "gender": "FEMALE",
+      "appointmentFee": 800,
+      "qualification": "MBBS, DCH",
+      "currentWorkingPlace": "Mymensingh Medical College Hospital",
+      "designation": "Pediatrician"
+    },
+    "specialties": [
+      "019dc572-84a0-7298-a9d1-ed313b139069"
+    ]
+  },
+  "headers": {
+    "contentType": "application/json"
+  }
+}
+{
+  "time": "2026-04-25T16:37:26.330Z",
+  "method": "POST",
+  "url": "/api/v1/users/create-doctor",
+  "status": 201,
+  "duration": "8142ms",
+  "ip": "::1",
+  "userAgent": "PostmanRuntime/7.51.1",
+  "query": {},
+  "params": {},
+  "body": {
+    "password": "***",
+    "doctor": {
+      "name": "Dr. Rakib Chowdhury",
+      "email": "rakib7@healthmail.com",
+      "contactNumber": "01899001122",
+      "address": "Comilla, Bangladesh",
+      "registrationNumber": "BMDC-55660007",
+      "experience": 11,
+      "gender": "MALE",
+      "appointmentFee": 1100,
+      "qualification": "MBBS, MS (ENT)",
+      "currentWorkingPlace": "Cumilla Medical College Hospital",
+      "designation": "ENT Specialist"
+    },
+    "specialties": [
+      "019dc579-f1cc-70c4-a8d6-7e591bb34705"
+    ]
+  },
+  "headers": {
+    "contentType": "application/json"
+  }
+}
+{
+  "time": "2026-04-25T16:37:48.501Z",
+  "method": "POST",
+  "url": "/api/v1/users/create-doctor",
+  "status": 201,
+  "duration": "10128ms",
+  "ip": "::1",
+  "userAgent": "PostmanRuntime/7.51.1",
+  "query": {},
+  "params": {},
+  "body": {
+    "password": "***",
+    "doctor": {
+      "name": "Dr. Mehzabin Akter",
+      "email": "mehzabin6@healthmail.com",
+      "contactNumber": "01788990011",
+      "address": "Khulna, Bangladesh",
+      "registrationNumber": "BMDC-55660006",
+      "experience": 9,
+      "gender": "FEMALE",
+      "appointmentFee": 950,
+      "qualification": "MBBS, FCPS (Medicine)",
+      "currentWorkingPlace": "Khulna Medical College Hospital",
+      "designation": "Medicine Specialist"
+    },
+    "specialties": [
+      "019dc579-14aa-72c9-9358-de3da3ecdcb8"
+    ]
+  },
+  "headers": {
+    "contentType": "application/json"
+  }
+}
+{
+  "time": "2026-04-25T16:39:08.223Z",
+  "method": "POST",
+  "url": "/api/v1/users/create-doctor",
+  "status": 201,
+  "duration": "8932ms",
+  "ip": "::1",
+  "userAgent": "PostmanRuntime/7.51.1",
+  "query": {},
+  "params": {},
+  "body": {
+    "password": "***",
+    "doctor": {
+      "name": "Dr. Arif Mahmud",
+      "email": "arif11@healthmail.com",
+      "contactNumber": "01955661234",
+      "address": "Dhaka, Bangladesh",
+      "registrationNumber": "BMDC-55660011",
+      "experience": 14,
+      "gender": "MALE",
+      "appointmentFee": 1400,
+      "qualification": "MBBS, MD (Cardiology)",
+      "currentWorkingPlace": "National Heart Foundation Hospital",
+      "designation": "Cardiologist"
+    },
+    "specialties": [
+      "019dc576-c318-77b2-b18a-f4a08b39dad6"
+    ]
+  },
+  "headers": {
+    "contentType": "application/json"
+  }
+}
+{
+  "time": "2026-04-25T16:39:19.665Z",
+  "method": "POST",
+  "url": "/api/v1/users/create-doctor",
+  "status": 201,
+  "duration": "6677ms",
+  "ip": "::1",
+  "userAgent": "PostmanRuntime/7.51.1",
+  "query": {},
+  "params": {},
+  "body": {
+    "password": "***",
+    "doctor": {
+      "name": "Dr. Jannatul Ferdous",
+      "email": "jannat12@healthmail.com",
+      "contactNumber": "01788994567",
+      "address": "Chittagong, Bangladesh",
+      "registrationNumber": "BMDC-55660012",
+      "experience": 9,
+      "gender": "FEMALE",
+      "appointmentFee": 950,
+      "qualification": "MBBS, FCPS (Gynecology)",
+      "currentWorkingPlace": "Chattogram Maa-O-Shishu Hospital",
+      "designation": "Gynecologist"
+    },
+    "specialties": [
+      "019dc574-120e-70b6-92f5-97f58c5b6322"
+    ]
+  },
+  "headers": {
+    "contentType": "application/json"
+  }
+}
+{
+  "time": "2026-04-25T16:39:30.485Z",
+  "method": "POST",
+  "url": "/api/v1/users/create-doctor",
+  "status": 201,
+  "duration": "5714ms",
+  "ip": "::1",
+  "userAgent": "PostmanRuntime/7.51.1",
+  "query": {},
+  "params": {},
+  "body": {
+    "password": "***",
+    "doctor": {
+      "name": "Dr. Kamrul Hasan",
+      "email": "kamrul13@healthmail.com",
+      "contactNumber": "01877221133",
+      "address": "Khulna, Bangladesh",
+      "registrationNumber": "BMDC-55660013",
+      "experience": 11,
+      "gender": "MALE",
+      "appointmentFee": 1100,
+      "qualification": "MBBS, MS (Orthopedics)",
+      "currentWorkingPlace": "Khulna Medical College Hospital",
+      "designation": "Orthopedic Surgeon"
+    },
+    "specialties": [
+      "019dc572-84a0-7298-a9d1-ed313b139069"
+    ]
+  },
+  "headers": {
+    "contentType": "application/json"
+  }
+}
+{
+  "time": "2026-04-25T16:39:50.397Z",
+  "method": "POST",
+  "url": "/api/v1/users/create-doctor",
+  "status": 201,
+  "duration": "9298ms",
+  "ip": "::1",
+  "userAgent": "PostmanRuntime/7.51.1",
+  "query": {},
+  "params": {},
+  "body": {
+    "password": "***",
+    "doctor": {
+      "name": "Dr. Priyanka Das",
+      "email": "priyanka14@healthmail.com",
+      "contactNumber": "01933447788",
+      "address": "Sylhet, Bangladesh",
+      "registrationNumber": "BMDC-55660014",
+      "experience": 7,
+      "gender": "FEMALE",
+      "appointmentFee": 880,
+      "qualification": "MBBS, DDV",
+      "currentWorkingPlace": "Sylhet Womens Medical Center",
+      "designation": "Dermatologist"
+    },
+    "specialties": [
+      "019dc578-4012-7346-a6df-8aac3eced7d3"
+    ]
+  },
+  "headers": {
+    "contentType": "application/json"
+  }
+}
+{
+  "time": "2026-04-25T16:40:01.860Z",
+  "method": "POST",
+  "url": "/api/v1/users/create-doctor",
+  "status": 201,
+  "duration": "6212ms",
+  "ip": "::1",
+  "userAgent": "PostmanRuntime/7.51.1",
+  "query": {},
+  "params": {},
+  "body": {
+    "password": "***",
+    "doctor": {
+      "name": "Dr. Sabbir Rahman",
+      "email": "sabbir15@healthmail.com",
+      "contactNumber": "01611223344",
+      "address": "Rajshahi, Bangladesh",
+      "registrationNumber": "BMDC-55660015",
+      "experience": 13,
+      "gender": "MALE",
+      "appointmentFee": 1250,
+      "qualification": "MBBS, MD (Neurology)",
+      "currentWorkingPlace": "Rajshahi Medical College Hospital",
+      "designation": "Neurologist"
+    },
+    "specialties": [
+      "019dc579-14aa-72c9-9358-de3da3ecdcb8"
+    ]
+  },
+  "headers": {
+    "contentType": "application/json"
+  }
+}
+{
+  "time": "2026-04-25T16:40:26.093Z",
+  "method": "POST",
+  "url": "/api/v1/users/create-doctor",
+  "status": 201,
+  "duration": "10710ms",
+  "ip": "::1",
+  "userAgent": "PostmanRuntime/7.51.1",
+  "query": {},
+  "params": {},
+  "body": {
+    "password": "***",
+    "doctor": {
+      "name": "Dr. Rukaiya Sultana",
+      "email": "rukaiya16@healthmail.com",
+      "contactNumber": "01744558899",
+      "address": "Barisal, Bangladesh",
+      "registrationNumber": "BMDC-55660016",
+      "experience": 6,
+      "gender": "FEMALE",
+      "appointmentFee": 820,
+      "qualification": "MBBS, DCH",
+      "currentWorkingPlace": "Barisal General Hospital",
+      "designation": "Pediatrician"
+    },
+    "specialties": [
+      "019dc575-d0e2-7064-bfdb-2da7afecf167"
+    ]
+  },
+  "headers": {
+    "contentType": "application/json"
+  }
+}
+{
+  "time": "2026-04-25T16:40:42.068Z",
+  "method": "POST",
+  "url": "/api/v1/users/create-doctor",
+  "status": 201,
+  "duration": "7044ms",
+  "ip": "::1",
+  "userAgent": "PostmanRuntime/7.51.1",
+  "query": {},
+  "params": {},
+  "body": {
+    "password": "***",
+    "doctor": {
+      "name": "Dr. Mahin Chowdhury",
+      "email": "mahin17@healthmail.com",
+      "contactNumber": "01866554433",
+      "address": "Cumilla, Bangladesh",
+      "registrationNumber": "BMDC-55660017",
+      "experience": 10,
+      "gender": "MALE",
+      "appointmentFee": 1000,
+      "qualification": "MBBS, MS (ENT)",
+      "currentWorkingPlace": "Cumilla Medical College Hospital",
+      "designation": "ENT Specialist"
+    },
+    "specialties": [
+      "019dc579-f1cc-70c4-a8d6-7e591bb34705"
+    ]
+  },
+  "headers": {
+    "contentType": "application/json"
+  }
+}
+{
+  "time": "2026-04-25T16:41:32.652Z",
+  "method": "POST",
+  "url": "/api/v1/users/create-doctor",
+  "status": 201,
+  "duration": "9266ms",
+  "ip": "::1",
+  "userAgent": "PostmanRuntime/7.51.1",
+  "query": {},
+  "params": {},
+  "body": {
+    "password": "***",
+    "doctor": {
+      "name": "Dr. Nabila Karim",
+      "email": "nabila18@healthmail.com",
+      "contactNumber": "01988997766",
+      "address": "Rangpur, Bangladesh",
+      "registrationNumber": "BMDC-55660018",
+      "experience": 8,
+      "gender": "FEMALE",
+      "appointmentFee": 920,
+      "qualification": "MBBS, MD (Psychiatry)",
+      "currentWorkingPlace": "Rangpur Medical College Hospital",
+      "designation": "Psychiatrist"
+    },
+    "specialties": [
+      "019dc574-120e-70b6-92f5-97f58c5b6322"
+    ]
+  },
+  "headers": {
+    "contentType": "application/json"
+  }
+}
+{
+  "time": "2026-04-25T16:41:44.499Z",
+  "method": "POST",
+  "url": "/api/v1/users/create-doctor",
+  "status": 201,
+  "duration": "5999ms",
+  "ip": "::1",
+  "userAgent": "PostmanRuntime/7.51.1",
+  "query": {},
+  "params": {},
+  "body": {
+    "password": "***",
+    "doctor": {
+      "name": "Dr. Tareq Aziz",
+      "email": "tareq19@healthmail.com",
+      "contactNumber": "01722331199",
+      "address": "Mymensingh, Bangladesh",
+      "registrationNumber": "BMDC-55660019",
+      "experience": 12,
+      "gender": "MALE",
+      "appointmentFee": 1180,
+      "qualification": "MBBS, FCPS (Medicine)",
+      "currentWorkingPlace": "Mymensingh Medical College Hospital",
+      "designation": "Medicine Specialist"
+    },
+    "specialties": [
+      "019dc575-d0e2-7064-bfdb-2da7afecf167"
+    ]
+  },
+  "headers": {
+    "contentType": "application/json"
+  }
+}
+{
+  "time": "2026-04-25T16:41:58.999Z",
+  "method": "POST",
+  "url": "/api/v1/users/create-doctor",
+  "status": 201,
+  "duration": "7486ms",
+  "ip": "::1",
+  "userAgent": "PostmanRuntime/7.51.1",
+  "query": {},
+  "params": {},
+  "body": {
+    "password": "***",
+    "doctor": {
+      "name": "Dr. Sharmin Akter",
+      "email": "sharmin20@healthmail.com",
+      "contactNumber": "01699887755",
+      "address": "Noakhali, Bangladesh",
+      "registrationNumber": "BMDC-55660020",
+      "experience": 5,
+      "gender": "FEMALE",
+      "appointmentFee": 780,
+      "qualification": "MBBS, MCPS",
+      "currentWorkingPlace": "Noakhali General Hospital",
+      "designation": "General Physician"
+    },
+    "specialties": [
+      "019dc572-84a0-7298-a9d1-ed313b139069"
+    ]
+  },
+  "headers": {
+    "contentType": "application/json"
+  }
+}
+{
+  "time": "2026-04-25T16:42:57.647Z",
+  "method": "POST",
+  "url": "/api/v1/users/create-doctor",
+  "status": 201,
+  "duration": "9018ms",
+  "ip": "::1",
+  "userAgent": "PostmanRuntime/7.51.1",
+  "query": {},
+  "params": {},
+  "body": {
+    "password": "***",
+    "doctor": {
+      "name": "Dr. Hasan Mahmud",
+      "email": "hasan21@healthmail.com",
+      "contactNumber": "01944556621",
+      "address": "Dhaka, Bangladesh",
+      "registrationNumber": "BMDC-55660021",
+      "experience": 16,
+      "gender": "MALE",
+      "appointmentFee": 1500,
+      "qualification": "MBBS, MD (Cardiology)",
+      "currentWorkingPlace": "Square Hospital Dhaka",
+      "designation": "Cardiologist"
+    },
+    "specialties": [
+      "019dc576-c318-77b2-b18a-f4a08b39dad6"
+    ]
+  },
+  "headers": {
+    "contentType": "application/json"
+  }
+}
+{
+  "time": "2026-04-25T16:43:24.239Z",
+  "method": "POST",
+  "url": "/api/v1/users/create-doctor",
+  "status": 201,
+  "duration": "7794ms",
+  "ip": "::1",
+  "userAgent": "PostmanRuntime/7.51.1",
+  "query": {},
+  "params": {},
+  "body": {
+    "password": "***",
+    "doctor": {
+      "name": "Dr. Sumaiya Kabir",
+      "email": "sumaiya22@healthmail.com",
+      "contactNumber": "01755667722",
+      "address": "Chittagong, Bangladesh",
+      "registrationNumber": "BMDC-55660022",
+      "experience": 9,
+      "gender": "FEMALE",
+      "appointmentFee": 980,
+      "qualification": "MBBS, FCPS (Gynecology)",
+      "currentWorkingPlace": "Chittagong Medical College Hospital",
+      "designation": "Gynecologist"
+    },
+    "specialties": [
+      "019dc574-120e-70b6-92f5-97f58c5b6322"
+    ]
+  },
+  "headers": {
+    "contentType": "application/json"
+  }
+}
+{
+  "time": "2026-04-25T16:43:34.717Z",
+  "method": "POST",
+  "url": "/api/v1/users/create-doctor",
+  "status": 201,
+  "duration": "5353ms",
+  "ip": "::1",
+  "userAgent": "PostmanRuntime/7.51.1",
+  "query": {},
+  "params": {},
+  "body": {
+    "password": "***",
+    "doctor": {
+      "name": "Dr. Rezaul Karim",
+      "email": "rezaul23@healthmail.com",
+      "contactNumber": "01866778823",
+      "address": "Khulna, Bangladesh",
+      "registrationNumber": "BMDC-55660023",
+      "experience": 12,
+      "gender": "MALE",
+      "appointmentFee": 1150,
+      "qualification": "MBBS, MS (Orthopedics)",
+      "currentWorkingPlace": "Gazi Medical College Hospital",
+      "designation": "Orthopedic Surgeon"
+    },
+    "specialties": [
+      "019dc572-84a0-7298-a9d1-ed313b139069"
+    ]
+  },
+  "headers": {
+    "contentType": "application/json"
+  }
+}
+{
+  "time": "2026-04-25T16:43:49.250Z",
+  "method": "POST",
+  "url": "/api/v1/users/create-doctor",
+  "status": 201,
+  "duration": "6129ms",
+  "ip": "::1",
+  "userAgent": "PostmanRuntime/7.51.1",
+  "query": {},
+  "params": {},
+  "body": {
+    "password": "***",
+    "doctor": {
+      "name": "Dr. Mahi Noor",
+      "email": "mahi24@healthmail.com",
+      "contactNumber": "01911224424",
+      "address": "Sylhet, Bangladesh",
+      "registrationNumber": "BMDC-55660024",
+      "experience": 7,
+      "gender": "FEMALE",
+      "appointmentFee": 870,
+      "qualification": "MBBS, DDV",
+      "currentWorkingPlace": "Sylhet Central Hospital",
+      "designation": "Dermatologist"
+    },
+    "specialties": [
+      "019dc578-4012-7346-a6df-8aac3eced7d3"
+    ]
+  },
+  "headers": {
+    "contentType": "application/json"
+  }
+}
+{
+  "time": "2026-04-25T16:44:11.187Z",
+  "method": "POST",
+  "url": "/api/v1/users/create-doctor",
+  "status": 201,
+  "duration": "11920ms",
+  "ip": "::1",
+  "userAgent": "PostmanRuntime/7.51.1",
+  "query": {},
+  "params": {},
+  "body": {
+    "password": "***",
+    "doctor": {
+      "name": "Dr. Saif Uddin",
+      "email": "saif25@healthmail.com",
+      "contactNumber": "01633445525",
+      "address": "Rajshahi, Bangladesh",
+      "registrationNumber": "BMDC-55660025",
+      "experience": 14,
+      "gender": "MALE",
+      "appointmentFee": 1280,
+      "qualification": "MBBS, MD (Neurology)",
+      "currentWorkingPlace": "Rajshahi Royal Hospital",
+      "designation": "Neurologist"
+    },
+    "specialties": [
+      "019dc579-14aa-72c9-9358-de3da3ecdcb8"
+    ]
+  },
+  "headers": {
+    "contentType": "application/json"
+  }
+}
+{
+  "time": "2026-04-25T16:44:20.307Z",
+  "method": "POST",
+  "url": "/api/v1/users/create-doctor",
+  "status": 201,
+  "duration": "4973ms",
+  "ip": "::1",
+  "userAgent": "PostmanRuntime/7.51.1",
+  "query": {},
+  "params": {},
+  "body": {
+    "password": "***",
+    "doctor": {
+      "name": "Dr. Tanjina Akter",
+      "email": "tanjina26@healthmail.com",
+      "contactNumber": "01777889926",
+      "address": "Barisal, Bangladesh",
+      "registrationNumber": "BMDC-55660026",
+      "experience": 6,
+      "gender": "FEMALE",
+      "appointmentFee": 820,
+      "qualification": "MBBS, DCH",
+      "currentWorkingPlace": "Barisal City Hospital",
+      "designation": "Pediatrician"
+    },
+    "specialties": [
+      "019dc575-d0e2-7064-bfdb-2da7afecf167"
+    ]
+  },
+  "headers": {
+    "contentType": "application/json"
+  }
+}
+{
+  "time": "2026-04-25T16:44:41.823Z",
+  "method": "POST",
+  "url": "/api/v1/users/create-doctor",
+  "status": 201,
+  "duration": "10759ms",
+  "ip": "::1",
+  "userAgent": "PostmanRuntime/7.51.1",
+  "query": {},
+  "params": {},
+  "body": {
+    "password": "***",
+    "doctor": {
+      "name": "Dr. Fardin Alam",
+      "email": "fardin27@healthmail.com",
+      "contactNumber": "01822334427",
+      "address": "Cumilla, Bangladesh",
+      "registrationNumber": "BMDC-55660027",
+      "experience": 10,
+      "gender": "MALE",
+      "appointmentFee": 1020,
+      "qualification": "MBBS, MS (ENT)",
+      "currentWorkingPlace": "Cumilla Trauma Center",
+      "designation": "ENT Specialist"
+    },
+    "specialties": [
+      "019dc579-f1cc-70c4-a8d6-7e591bb34705"
+    ]
+  },
+  "headers": {
+    "contentType": "application/json"
+  }
+}
+{
+  "time": "2026-04-25T16:44:51.614Z",
+  "method": "POST",
+  "url": "/api/v1/users/create-doctor",
+  "status": 201,
+  "duration": "5074ms",
+  "ip": "::1",
+  "userAgent": "PostmanRuntime/7.51.1",
+  "query": {},
+  "params": {},
+  "body": {
+    "password": "***",
+    "doctor": {
+      "name": "Dr. Anika Rahman",
+      "email": "anika28@healthmail.com",
+      "contactNumber": "01966778828",
+      "address": "Rangpur, Bangladesh",
+      "registrationNumber": "BMDC-55660028",
+      "experience": 8,
+      "gender": "FEMALE",
+      "appointmentFee": 910,
+      "qualification": "MBBS, MD (Psychiatry)",
+      "currentWorkingPlace": "Prime Medical Rangpur",
+      "designation": "Psychiatrist"
+    },
+    "specialties": [
+      "019dc574-120e-70b6-92f5-97f58c5b6322"
+    ]
+  },
+  "headers": {
+    "contentType": "application/json"
+  }
+}
+{
+  "time": "2026-04-25T16:45:05.469Z",
+  "method": "POST",
+  "url": "/api/v1/users/create-doctor",
+  "status": 201,
+  "duration": "5024ms",
+  "ip": "::1",
+  "userAgent": "PostmanRuntime/7.51.1",
+  "query": {},
+  "params": {},
+  "body": {
+    "password": "***",
+    "doctor": {
+      "name": "Dr. Rifat Hossain",
+      "email": "rifat29@healthmail.com",
+      "contactNumber": "01733445529",
+      "address": "Mymensingh, Bangladesh",
+      "registrationNumber": "BMDC-55660029",
+      "experience": 11,
+      "gender": "MALE",
+      "appointmentFee": 1120,
+      "qualification": "MBBS, FCPS (Medicine)",
+      "currentWorkingPlace": "Labaid Mymensingh",
+      "designation": "Medicine Specialist"
+    },
+    "specialties": [
+      "019dc575-d0e2-7064-bfdb-2da7afecf167"
+    ]
+  },
+  "headers": {
+    "contentType": "application/json"
+  }
+}
+{
+  "time": "2026-04-25T16:45:17.655Z",
+  "method": "POST",
+  "url": "/api/v1/users/create-doctor",
+  "status": 201,
+  "duration": "5286ms",
+  "ip": "::1",
+  "userAgent": "PostmanRuntime/7.51.1",
+  "query": {},
+  "params": {},
+  "body": {
+    "password": "***",
+    "doctor": {
+      "name": "Dr. Sultana Noor",
+      "email": "sultana30@healthmail.com",
+      "contactNumber": "01655667730",
+      "address": "Noakhali, Bangladesh",
+      "registrationNumber": "BMDC-55660030",
+      "experience": 5,
+      "gender": "FEMALE",
+      "appointmentFee": 760,
+      "qualification": "MBBS, MCPS",
+      "currentWorkingPlace": "Noakhali Health Care Center",
+      "designation": "General Physician"
+    },
+    "specialties": [
+      "019dc572-84a0-7298-a9d1-ed313b139069"
+    ]
+  },
+  "headers": {
+    "contentType": "application/json"
+  }
+}
+{
+  "time": "2026-04-25T16:46:09.750Z",
+  "method": "POST",
+  "url": "/api/v1/users/create-doctor",
+  "status": 201,
+  "duration": "7600ms",
+  "ip": "::1",
+  "userAgent": "PostmanRuntime/7.51.1",
+  "query": {},
+  "params": {},
+  "body": {
+    "password": "***",
+    "doctor": {
+      "name": "Dr. Arafat Hossain",
+      "email": "arafat31@healthmail.com",
+      "contactNumber": "01922113331",
+      "address": "Dhaka, Bangladesh",
+      "registrationNumber": "BMDC-55660031",
+      "experience": 15,
+      "gender": "MALE",
+      "appointmentFee": 1500,
+      "qualification": "MBBS, MD (Medicine), FCPS (Cardiology)",
+      "currentWorkingPlace": "Square Hospital Dhaka",
+      "designation": "Consultant Physician"
+    },
+    "specialties": [
+      "019dc576-c318-77b2-b18a-f4a08b39dad6",
+      "019dc575-d0e2-7064-bfdb-2da7afecf167"
+    ]
+  },
+  "headers": {
+    "contentType": "application/json"
+  }
+}
+{
+  "time": "2026-04-25T16:46:18.556Z",
+  "method": "POST",
+  "url": "/api/v1/users/create-doctor",
+  "status": 201,
+  "duration": "5180ms",
+  "ip": "::1",
+  "userAgent": "PostmanRuntime/7.51.1",
+  "query": {},
+  "params": {},
+  "body": {
+    "password": "***",
+    "doctor": {
+      "name": "Dr. Nabila Sayeed",
+      "email": "nabila32@healthmail.com",
+      "contactNumber": "01755443332",
+      "address": "Chittagong, Bangladesh",
+      "registrationNumber": "BMDC-55660032",
+      "experience": 11,
+      "gender": "FEMALE",
+      "appointmentFee": 1150,
+      "qualification": "MBBS, FCPS (Gynecology), DGO",
+      "currentWorkingPlace": "Chattogram Metropolitan Hospital",
+      "designation": "Gynecology Consultant"
+    },
+    "specialties": [
+      "019dc574-120e-70b6-92f5-97f58c5b6322",
+      "019dc575-d0e2-7064-bfdb-2da7afecf167"
+    ]
+  },
+  "headers": {
+    "contentType": "application/json"
+  }
+}
+{
+  "time": "2026-04-25T16:46:35.720Z",
+  "method": "POST",
+  "url": "/api/v1/users/create-doctor",
+  "status": 201,
+  "duration": "6996ms",
+  "ip": "::1",
+  "userAgent": "PostmanRuntime/7.51.1",
+  "query": {},
+  "params": {},
+  "body": {
+    "password": "***",
+    "doctor": {
+      "name": "Dr. Mahadi Karim",
+      "email": "mahadi33@healthmail.com",
+      "contactNumber": "01877665533",
+      "address": "Khulna, Bangladesh",
+      "registrationNumber": "BMDC-55660033",
+      "experience": 13,
+      "gender": "MALE",
+      "appointmentFee": 1250,
+      "qualification": "MBBS, MS (Orthopedics), Trauma Surgery",
+      "currentWorkingPlace": "Khulna Trauma Center",
+      "designation": "Orthopedic & Trauma Surgeon"
+    },
+    "specialties": [
+      "019dc572-84a0-7298-a9d1-ed313b139069",
+      "019dc579-f1cc-70c4-a8d6-7e591bb34705"
+    ]
+  },
+  "headers": {
+    "contentType": "application/json"
+  }
+}
+{
+  "time": "2026-04-25T16:46:45.296Z",
+  "method": "POST",
+  "url": "/api/v1/users/create-doctor",
+  "status": 201,
+  "duration": "5021ms",
+  "ip": "::1",
+  "userAgent": "PostmanRuntime/7.51.1",
+  "query": {},
+  "params": {},
+  "body": {
+    "password": "***",
+    "doctor": {
+      "name": "Dr. Tasmia Rahman",
+      "email": "tasmia34@healthmail.com",
+      "contactNumber": "01988776634",
+      "address": "Sylhet, Bangladesh",
+      "registrationNumber": "BMDC-55660034",
+      "experience": 9,
+      "gender": "FEMALE",
+      "appointmentFee": 980,
+      "qualification": "MBBS, DDV, Cosmetic Dermatology",
+      "currentWorkingPlace": "Sylhet Skin Care Center",
+      "designation": "Dermatologist"
+    },
+    "specialties": [
+      "019dc578-4012-7346-a6df-8aac3eced7d3",
+      "019dc575-d0e2-7064-bfdb-2da7afecf167"
+    ]
+  },
+  "headers": {
+    "contentType": "application/json"
+  }
+}
+{
+  "time": "2026-04-25T16:46:57.309Z",
+  "method": "POST",
+  "url": "/api/v1/users/create-doctor",
+  "status": 201,
+  "duration": "5665ms",
+  "ip": "::1",
+  "userAgent": "PostmanRuntime/7.51.1",
+  "query": {},
+  "params": {},
+  "body": {
+    "password": "***",
+    "doctor": {
+      "name": "Dr. Rehan Uddin",
+      "email": "rehan35@healthmail.com",
+      "contactNumber": "01633445535",
+      "address": "Rajshahi, Bangladesh",
+      "registrationNumber": "BMDC-55660035",
+      "experience": 14,
+      "gender": "MALE",
+      "appointmentFee": 1320,
+      "qualification": "MBBS, MD (Neurology), Stroke Fellowship",
+      "currentWorkingPlace": "Rajshahi Neuro Hospital",
+      "designation": "Neurologist"
+    },
+    "specialties": [
+      "019dc579-14aa-72c9-9358-de3da3ecdcb8",
+      "019dc576-c318-77b2-b18a-f4a08b39dad6"
+    ]
+  },
+  "headers": {
+    "contentType": "application/json"
+  }
+}
+{
+  "time": "2026-04-25T16:47:07.738Z",
+  "method": "POST",
+  "url": "/api/v1/users/create-doctor",
+  "status": 201,
+  "duration": "5283ms",
+  "ip": "::1",
+  "userAgent": "PostmanRuntime/7.51.1",
+  "query": {},
+  "params": {},
+  "body": {
+    "password": "***",
+    "doctor": {
+      "name": "Dr. Lamia Akter",
+      "email": "lamia36@healthmail.com",
+      "contactNumber": "01766778836",
+      "address": "Barisal, Bangladesh",
+      "registrationNumber": "BMDC-55660036",
+      "experience": 8,
+      "gender": "FEMALE",
+      "appointmentFee": 890,
+      "qualification": "MBBS, DCH, Child Nutrition",
+      "currentWorkingPlace": "Barisal Children Hospital",
+      "designation": "Pediatrician"
+    },
+    "specialties": [
+      "019dc575-d0e2-7064-bfdb-2da7afecf167",
+      "019dc574-120e-70b6-92f5-97f58c5b6322"
+    ]
+  },
+  "headers": {
+    "contentType": "application/json"
+  }
+}
+{
+  "time": "2026-04-25T16:47:18.562Z",
+  "method": "POST",
+  "url": "/api/v1/users/create-doctor",
+  "status": 201,
+  "duration": "5581ms",
+  "ip": "::1",
+  "userAgent": "PostmanRuntime/7.51.1",
+  "query": {},
+  "params": {},
+  "body": {
+    "password": "***",
+    "doctor": {
+      "name": "Dr. Fahad Chowdhury",
+      "email": "fahad37@healthmail.com",
+      "contactNumber": "01822334437",
+      "address": "Cumilla, Bangladesh",
+      "registrationNumber": "BMDC-55660037",
+      "experience": 12,
+      "gender": "MALE",
+      "appointmentFee": 1180,
+      "qualification": "MBBS, MS (ENT), Head Neck Surgery",
+      "currentWorkingPlace": "Cumilla ENT Institute",
+      "designation": "ENT Specialist"
+    },
+    "specialties": [
+      "019dc579-f1cc-70c4-a8d6-7e591bb34705",
+      "019dc572-84a0-7298-a9d1-ed313b139069"
+    ]
+  },
+  "headers": {
+    "contentType": "application/json"
+  }
+}
+{
+  "time": "2026-04-25T16:47:29.488Z",
+  "method": "POST",
+  "url": "/api/v1/users/create-doctor",
+  "status": 201,
+  "duration": "6314ms",
+  "ip": "::1",
+  "userAgent": "PostmanRuntime/7.51.1",
+  "query": {},
+  "params": {},
+  "body": {
+    "password": "***",
+    "doctor": {
+      "name": "Dr. Muntaha Noor",
+      "email": "muntaha38@healthmail.com",
+      "contactNumber": "01944556638",
+      "address": "Rangpur, Bangladesh",
+      "registrationNumber": "BMDC-55660038",
+      "experience": 10,
+      "gender": "FEMALE",
+      "appointmentFee": 1020,
+      "qualification": "MBBS, MD (Psychiatry), Counseling",
+      "currentWorkingPlace": "Rangpur Mental Wellness Center",
+      "designation": "Psychiatrist"
+    },
+    "specialties": [
+      "019dc574-120e-70b6-92f5-97f58c5b6322",
+      "019dc579-14aa-72c9-9358-de3da3ecdcb8"
+    ]
+  },
+  "headers": {
+    "contentType": "application/json"
+  }
+}
+{
+  "time": "2026-04-25T16:47:39.135Z",
+  "method": "POST",
+  "url": "/api/v1/users/create-doctor",
+  "status": 201,
+  "duration": "5283ms",
+  "ip": "::1",
+  "userAgent": "PostmanRuntime/7.51.1",
+  "query": {},
+  "params": {},
+  "body": {
+    "password": "***",
+    "doctor": {
+      "name": "Dr. Adnan Kabir",
+      "email": "adnan39@healthmail.com",
+      "contactNumber": "01711223339",
+      "address": "Mymensingh, Bangladesh",
+      "registrationNumber": "BMDC-55660039",
+      "experience": 13,
+      "gender": "MALE",
+      "appointmentFee": 1210,
+      "qualification": "MBBS, FCPS (Medicine), Diabetology",
+      "currentWorkingPlace": "Mymensingh City Hospital",
+      "designation": "Medicine Specialist"
+    },
+    "specialties": [
+      "019dc575-d0e2-7064-bfdb-2da7afecf167",
+      "019dc576-c318-77b2-b18a-f4a08b39dad6"
+    ]
+  },
+  "headers": {
+    "contentType": "application/json"
+  }
+}
+{
+  "time": "2026-04-25T16:47:51.443Z",
+  "method": "POST",
+  "url": "/api/v1/users/create-doctor",
+  "status": 201,
+  "duration": "6281ms",
+  "ip": "::1",
+  "userAgent": "PostmanRuntime/7.51.1",
+  "query": {},
+  "params": {},
+  "body": {
+    "password": "***",
+    "doctor": {
+      "name": "Dr. Sharifa Islam",
+      "email": "sharifa40@healthmail.com",
+      "contactNumber": "01699887740",
+      "address": "Noakhali, Bangladesh",
+      "registrationNumber": "BMDC-55660040",
+      "experience": 7,
+      "gender": "FEMALE",
+      "appointmentFee": 820,
+      "qualification": "MBBS, General Practice, Womens Health",
+      "currentWorkingPlace": "Noakhali Community Hospital",
+      "designation": "General Physician"
+    },
+    "specialties": [
+      "019dc572-84a0-7298-a9d1-ed313b139069",
+      "019dc574-120e-70b6-92f5-97f58c5b6322"
+    ]
+  },
+  "headers": {
+    "contentType": "application/json"
+  }
+}
+{
+  "time": "2026-04-25T16:52:43.748Z",
+  "method": "POST",
+  "url": "/api/v1/rag/ingest-doctors",
+  "status": 200,
+  "duration": "139646ms",
+  "ip": "::1",
+  "userAgent": "PostmanRuntime/7.51.1",
+  "query": {},
+  "params": {},
+  "headers": {
+    "contentType": "text/plain"
+  }
+}
+{
+  "time": "2026-04-25T16:59:29.376Z",
+  "method": "POST",
+  "url": "/api/v1/rag/ingest-doctors",
+  "status": 400,
+  "duration": "5696ms",
+  "ip": "::1",
+  "userAgent": "PostmanRuntime/7.51.1",
+  "query": {},
+  "params": {},
+  "headers": {
+    "contentType": "text/plain"
+  }
+}
+{
+  "time": "2026-04-25T17:06:10.946Z",
+  "method": "POST",
+  "url": "/api/v1/rag/ingest-doctors",
+  "status": 400,
+  "duration": "4934ms",
+  "ip": "::1",
+  "userAgent": "PostmanRuntime/7.51.1",
+  "query": {},
+  "params": {},
+  "headers": {
+    "contentType": "text/plain"
+  }
+}
+{
+  "time": "2026-04-25T17:16:59.456Z",
+  "method": "POST",
+  "url": "/api/v1/auth/login",
+  "status": 200,
+  "duration": "3337ms",
+  "ip": "::1",
+  "userAgent": "PostmanRuntime/7.51.1",
+  "query": {},
+  "params": {},
+  "body": {
+    "email": "seuperadmin@gmail.com",
+    "password": "***"
+  },
+  "headers": {
+    "contentType": "application/json"
+  }
+}
+{
+  "time": "2026-04-25T17:17:18.490Z",
+  "method": "POST",
+  "url": "/api/v1/specialties",
+  "status": 201,
+  "duration": "9075ms",
+  "ip": "::1",
+  "userAgent": "PostmanRuntime/7.51.1",
+  "query": {},
+  "params": {},
+  "body": {
+    "title": "Neurology"
+  },
+  "headers": {
+    "contentType": "multipart/form-data; boundary=--------------------------929361645047422833317467"
+  }
+}
+{
+  "time": "2026-04-25T17:19:03.243Z",
+  "method": "POST",
+  "url": "/api/v1/specialties",
+  "status": 201,
+  "duration": "8308ms",
+  "ip": "::1",
+  "userAgent": "PostmanRuntime/7.51.1",
+  "query": {},
+  "params": {},
+  "body": {
+    "title": "Dermatology"
+  },
+  "headers": {
+    "contentType": "multipart/form-data; boundary=--------------------------016508056855711518827909"
+  }
+}
+{
+  "time": "2026-04-25T17:19:57.926Z",
+  "method": "POST",
+  "url": "/api/v1/specialties",
+  "status": 201,
+  "duration": "9933ms",
+  "ip": "::1",
+  "userAgent": "PostmanRuntime/7.51.1",
+  "query": {},
+  "params": {},
+  "body": {
+    "title": "Psychiatry"
+  },
+  "headers": {
+    "contentType": "multipart/form-data; boundary=--------------------------711740499197116416965393"
+  }
+}
+{
+  "time": "2026-04-25T17:20:30.497Z",
+  "method": "POST",
+  "url": "/api/v1/specialties",
+  "status": 201,
+  "duration": "5254ms",
+  "ip": "::1",
+  "userAgent": "PostmanRuntime/7.51.1",
+  "query": {},
+  "params": {},
+  "body": {
+    "title": "Neurosurgery"
+  },
+  "headers": {
+    "contentType": "multipart/form-data; boundary=--------------------------455315726317894390182960"
+  }
+}
+{
+  "time": "2026-04-25T17:21:25.374Z",
+  "method": "POST",
+  "url": "/api/v1/specialties",
+  "status": 201,
+  "duration": "11458ms",
+  "ip": "::1",
+  "userAgent": "PostmanRuntime/7.51.1",
+  "query": {},
+  "params": {},
+  "body": {
+    "title": "Ideogram"
+  },
+  "headers": {
+    "contentType": "multipart/form-data; boundary=--------------------------120668258353142516901534"
+  }
+}
+{
+  "time": "2026-04-25T17:22:07.826Z",
+  "method": "POST",
+  "url": "/api/v1/specialties",
+  "status": 201,
+  "duration": "8384ms",
+  "ip": "::1",
+  "userAgent": "PostmanRuntime/7.51.1",
+  "query": {},
+  "params": {},
+  "body": {
+    "title": "Endocrinology"
+  },
+  "headers": {
+    "contentType": "multipart/form-data; boundary=--------------------------006362929580088504544348"
+  }
+}
+{
+  "time": "2026-04-25T17:23:11.729Z",
+  "method": "POST",
+  "url": "/api/v1/specialties",
+  "status": 201,
+  "duration": "12457ms",
+  "ip": "::1",
+  "userAgent": "PostmanRuntime/7.51.1",
+  "query": {},
+  "params": {},
+  "body": {
+    "title": "Urology"
+  },
+  "headers": {
+    "contentType": "multipart/form-data; boundary=--------------------------586120461896196269076859"
+  }
+}
+{
+  "time": "2026-04-25T17:25:30.083Z",
+  "method": "POST",
+  "url": "/api/v1/specialties",
+  "status": 500,
+  "duration": "80002ms",
+  "ip": "::1",
+  "userAgent": "PostmanRuntime/7.51.1",
+  "query": {},
+  "params": {},
+  "body": {
+    "data": "{\n   \"title\" :  \"Cardiology\"\n}"
+  },
+  "headers": {
+    "contentType": "multipart/form-data; boundary=--------------------------186700647933142099257841"
+  }
+}
+{
+  "time": "2026-04-25T17:26:49.770Z",
+  "method": "POST",
+  "url": "/api/v1/specialties",
+  "status": 500,
+  "duration": "5029ms",
+  "ip": "::1",
+  "userAgent": "PostmanRuntime/7.51.1",
+  "query": {},
+  "params": {},
+  "body": {
+    "data": "{\n   \"title\" :  \"Cardiology\"\n}"
+  },
+  "headers": {
+    "contentType": "multipart/form-data; boundary=--------------------------198050883841239565235359"
+  }
+}
+{
+  "time": "2026-04-25T17:26:52.224Z",
+  "method": "POST",
+  "url": "/api/v1/specialties",
+  "status": 500,
+  "duration": "77562ms",
+  "ip": "::1",
+  "userAgent": "PostmanRuntime/7.51.1",
+  "query": {},
+  "params": {},
+  "body": {
+    "data": "{\n   \"title\" :  \"Cardiology\"\n}"
+  },
+  "headers": {
+    "contentType": "multipart/form-data; boundary=--------------------------868194812622271037092425"
+  }
+}
+{
+  "time": "2026-04-25T17:28:51.791Z",
+  "method": "POST",
+  "url": "/api/v1/specialties",
+  "status": 500,
+  "duration": "71071ms",
+  "ip": "::1",
+  "userAgent": "PostmanRuntime/7.51.1",
+  "query": {},
+  "params": {},
+  "body": {
+    "data": "{\n   \"title\" :  \"Cardiology\"\n}"
+  },
+  "headers": {
+    "contentType": "multipart/form-data; boundary=--------------------------670914751434100989974136"
+  }
+}
+{
+  "time": "2026-04-25T17:29:42.799Z",
+  "method": "POST",
+  "url": "/api/v1/specialties",
+  "status": 500,
+  "duration": "28900ms",
+  "ip": "::1",
+  "userAgent": "PostmanRuntime/7.51.1",
+  "query": {},
+  "params": {},
+  "body": {
+    "data": "{\n   \"title\" :  \"Cardiology\"\n}"
+  },
+  "headers": {
+    "contentType": "multipart/form-data; boundary=--------------------------624405318021381771786981"
+  }
+}
+{
+  "time": "2026-04-25T17:30:19.324Z",
+  "method": "POST",
+  "url": "/api/v1/specialties",
+  "status": 201,
+  "duration": "12028ms",
+  "ip": "::1",
+  "userAgent": "PostmanRuntime/7.51.1",
+  "query": {},
+  "params": {},
+  "body": {
+    "title": "Cardiology"
+  },
+  "headers": {
+    "contentType": "multipart/form-data; boundary=--------------------------109666728953012577777891"
+  }
+}
+{
+  "time": "2026-04-25T17:31:31.345Z",
+  "method": "POST",
+  "url": "/api/v1/users/create-doctor",
+  "status": 500,
+  "duration": "2469ms",
+  "ip": "::1",
+  "userAgent": "PostmanRuntime/7.51.1",
+  "query": {},
+  "params": {},
+  "body": {
+    "password": "***",
+    "doctor": {
+      "name": "Dr. Sharifa Islam",
+      "email": "sharifa40@healthmail.com",
+      "contactNumber": "01699887740",
+      "address": "Noakhali, Bangladesh",
+      "registrationNumber": "BMDC-55660040",
+      "experience": 7,
+      "gender": "FEMALE",
+      "appointmentFee": 820,
+      "qualification": "MBBS, General Practice, Womens Health",
+      "currentWorkingPlace": "Noakhali Community Hospital",
+      "designation": "General Physician"
+    },
+    "specialties": [
+      "019dc572-84a0-7298-a9d1-ed313b139069",
+      "019dc574-120e-70b6-92f5-97f58c5b6322"
+    ]
+  },
+  "headers": {
+    "contentType": "application/json"
+  }
+}
+{
+  "time": "2026-04-25T17:32:27.719Z",
+  "method": "POST",
+  "url": "/api/v1/users/create-doctor",
+  "status": 201,
+  "duration": "7886ms",
+  "ip": "::1",
+  "userAgent": "PostmanRuntime/7.51.1",
+  "query": {},
+  "params": {},
+  "body": {
+    "password": "***",
+    "doctor": {
+      "name": "Dr. Amina Rahman",
+      "email": "doctor1@healthmail.com",
+      "contactNumber": "01710000001",
+      "address": "Dhaka, Bangladesh",
+      "registrationNumber": "BMDC-10000001",
+      "experience": 5,
+      "gender": "FEMALE",
+      "appointmentFee": 700,
+      "qualification": "MBBS, FCPS",
+      "currentWorkingPlace": "Dhaka Medical Center",
+      "designation": "Consultant Physician"
+    },
+    "specialties": [
+      "019dc5a5-4394-74af-9aa2-7043581de782",
+      "019dc5a6-dd1c-7181-ac5d-2215ffebb1cd"
+    ]
+  },
+  "headers": {
+    "contentType": "application/json"
+  }
+}
+{
+  "time": "2026-04-25T17:33:02.177Z",
+  "method": "POST",
+  "url": "/api/v1/users/create-doctor",
+  "status": 201,
+  "duration": "7464ms",
+  "ip": "::1",
+  "userAgent": "PostmanRuntime/7.51.1",
+  "query": {},
+  "params": {},
+  "body": {
+    "password": "***",
+    "doctor": {
+      "name": "Dr. Hasan Mahmud",
+      "email": "doctor2@healthmail.com",
+      "contactNumber": "01710000002",
+      "address": "Chattogram, Bangladesh",
+      "registrationNumber": "BMDC-10000002",
+      "experience": 8,
+      "gender": "MALE",
+      "appointmentFee": 900,
+      "qualification": "MBBS, MD",
+      "currentWorkingPlace": "Chattogram City Hospital",
+      "designation": "Specialist Doctor"
+    },
+    "specialties": [
+      "019dc5a7-b450-70bf-8586-ca789faa93ac"
+    ]
+  },
+  "headers": {
+    "contentType": "application/json"
+  }
+}
+{
+  "time": "2026-04-25T17:33:14.780Z",
+  "method": "POST",
+  "url": "/api/v1/users/create-doctor",
+  "status": 201,
+  "duration": "5071ms",
+  "ip": "::1",
+  "userAgent": "PostmanRuntime/7.51.1",
+  "query": {},
+  "params": {},
+  "body": {
+    "password": "***",
+    "doctor": {
+      "name": "Dr. Nusrat Jahan",
+      "email": "doctor3@healthmail.com",
+      "contactNumber": "01710000003",
+      "address": "Rajshahi, Bangladesh",
+      "registrationNumber": "BMDC-10000003",
+      "experience": 10,
+      "gender": "FEMALE",
+      "appointmentFee": 1000,
+      "qualification": "MBBS, FCPS",
+      "currentWorkingPlace": "Rajshahi General Hospital",
+      "designation": "Senior Consultant"
+    },
+    "specialties": [
+      "019dc5a8-3451-72ac-b079-7a34a76064b6",
+      "019dc5a9-0a08-77f4-a7a7-563df9dba5fa"
+    ]
+  },
+  "headers": {
+    "contentType": "application/json"
+  }
+}
+{
+  "time": "2026-04-25T17:33:25.640Z",
+  "method": "POST",
+  "url": "/api/v1/users/create-doctor",
+  "status": 201,
+  "duration": "5025ms",
+  "ip": "::1",
+  "userAgent": "PostmanRuntime/7.51.1",
+  "query": {},
+  "params": {},
+  "body": {
+    "password": "***",
+    "doctor": {
+      "name": "Dr. Farhan Karim",
+      "email": "doctor4@healthmail.com",
+      "contactNumber": "01710000004",
+      "address": "Khulna, Bangladesh",
+      "registrationNumber": "BMDC-10000004",
+      "experience": 6,
+      "gender": "MALE",
+      "appointmentFee": 750,
+      "qualification": "MBBS, DCH",
+      "currentWorkingPlace": "Khulna Health Care",
+      "designation": "Medical Officer"
+    },
+    "specialties": [
+      "019dc5a9-a5d0-755a-b241-4ce42d60eff4"
+    ]
+  },
+  "headers": {
+    "contentType": "application/json"
+  }
+}
+{
+  "time": "2026-04-25T17:33:37.077Z",
+  "method": "POST",
+  "url": "/api/v1/users/create-doctor",
+  "status": 201,
+  "duration": "5248ms",
+  "ip": "::1",
+  "userAgent": "PostmanRuntime/7.51.1",
+  "query": {},
+  "params": {},
+  "body": {
+    "password": "***",
+    "doctor": {
+      "name": "Dr. Sharmin Akter",
+      "email": "doctor5@healthmail.com",
+      "contactNumber": "01710000005",
+      "address": "Sylhet, Bangladesh",
+      "registrationNumber": "BMDC-10000005",
+      "experience": 9,
+      "gender": "FEMALE",
+      "appointmentFee": 950,
+      "qualification": "MBBS, MS",
+      "currentWorkingPlace": "Sylhet Central Hospital",
+      "designation": "Consultant Surgeon"
+    },
+    "specialties": [
+      "019dc5aa-aa4c-729c-89f5-155d101419a0",
+      "019dc5b1-3803-73be-a78f-a67d66199fe8"
+    ]
+  },
+  "headers": {
+    "contentType": "application/json"
+  }
+}
+{
+  "time": "2026-04-25T17:33:49.616Z",
+  "method": "POST",
+  "url": "/api/v1/users/create-doctor",
+  "status": 201,
+  "duration": "6075ms",
+  "ip": "::1",
+  "userAgent": "PostmanRuntime/7.51.1",
+  "query": {},
+  "params": {},
+  "body": {
+    "password": "***",
+    "doctor": {
+      "name": "Dr. Tanvir Ahmed",
+      "email": "doctor6@healthmail.com",
+      "contactNumber": "01710000006",
+      "address": "Barishal, Bangladesh",
+      "registrationNumber": "BMDC-10000006",
+      "experience": 4,
+      "gender": "MALE",
+      "appointmentFee": 680,
+      "qualification": "MBBS",
+      "currentWorkingPlace": "Barishal Clinic",
+      "designation": "Physician"
+    },
+    "specialties": [
+      "019dc5a5-4394-74af-9aa2-7043581de782"
+    ]
+  },
+  "headers": {
+    "contentType": "application/json"
+  }
+}
+{
+  "time": "2026-04-25T17:34:02.861Z",
+  "method": "POST",
+  "url": "/api/v1/users/create-doctor",
+  "status": 500,
+  "duration": "3125ms",
+  "ip": "::1",
+  "userAgent": "PostmanRuntime/7.51.1",
+  "query": {},
+  "params": {},
+  "body": {
+    "password": "***",
+    "doctor": {
+      "name": "Dr. Tanvir Ahmed",
+      "email": "doctor6@healthmail.com",
+      "contactNumber": "01710000006",
+      "address": "Barishal, Bangladesh",
+      "registrationNumber": "BMDC-10000006",
+      "experience": 4,
+      "gender": "MALE",
+      "appointmentFee": 680,
+      "qualification": "MBBS",
+      "currentWorkingPlace": "Barishal Clinic",
+      "designation": "Physician"
+    },
+    "specialties": [
+      "019dc5a5-4394-74af-9aa2-7043581de782"
+    ]
+  },
+  "headers": {
+    "contentType": "application/json"
+  }
+}
+{
+  "time": "2026-04-25T17:34:28.020Z",
+  "method": "POST",
+  "url": "/api/v1/users/create-doctor",
+  "status": 201,
+  "duration": "7059ms",
+  "ip": "::1",
+  "userAgent": "PostmanRuntime/7.51.1",
+  "query": {},
+  "params": {},
+  "body": {
+    "password": "***",
+    "doctor": {
+      "name": "Dr. Rima Sultana",
+      "email": "doctor7@healthmail.com",
+      "contactNumber": "01710000007",
+      "address": "Cumilla, Bangladesh",
+      "registrationNumber": "BMDC-10000007",
+      "experience": 11,
+      "gender": "FEMALE",
+      "appointmentFee": 1050,
+      "qualification": "MBBS, FCPS",
+      "currentWorkingPlace": "Cumilla Medical",
+      "designation": "Consultant"
+    },
+    "specialties": [
+      "019dc5a6-dd1c-7181-ac5d-2215ffebb1cd"
+    ]
+  },
+  "headers": {
+    "contentType": "application/json"
+  }
+}
+{
+  "time": "2026-04-25T17:34:36.724Z",
+  "method": "POST",
+  "url": "/api/v1/users/create-doctor",
+  "status": 201,
+  "duration": "4959ms",
+  "ip": "::1",
+  "userAgent": "PostmanRuntime/7.51.1",
+  "query": {},
+  "params": {},
+  "body": {
+    "password": "***",
+    "doctor": {
+      "name": "Dr. Saif Hossain",
+      "email": "doctor8@healthmail.com",
+      "contactNumber": "01710000008",
+      "address": "Mymensingh, Bangladesh",
+      "registrationNumber": "BMDC-10000008",
+      "experience": 7,
+      "gender": "MALE",
+      "appointmentFee": 850,
+      "qualification": "MBBS, MD",
+      "currentWorkingPlace": "Mymensingh Hospital",
+      "designation": "Registrar"
+    },
+    "specialties": [
+      "019dc5a7-b450-70bf-8586-ca789faa93ac"
+    ]
+  },
+  "headers": {
+    "contentType": "application/json"
+  }
+}
+{
+  "time": "2026-04-25T17:34:47.896Z",
+  "method": "POST",
+  "url": "/api/v1/users/create-doctor",
+  "status": 201,
+  "duration": "4767ms",
+  "ip": "::1",
+  "userAgent": "PostmanRuntime/7.51.1",
+  "query": {},
+  "params": {},
+  "body": {
+    "password": "***",
+    "doctor": {
+      "name": "Dr. Labiba Noor",
+      "email": "doctor9@healthmail.com",
+      "contactNumber": "01710000009",
+      "address": "Rangpur, Bangladesh",
+      "registrationNumber": "BMDC-10000009",
+      "experience": 6,
+      "gender": "FEMALE",
+      "appointmentFee": 800,
+      "qualification": "MBBS",
+      "currentWorkingPlace": "Rangpur Care",
+      "designation": "Medical Officer"
+    },
+    "specialties": [
+      "019dc5a8-3451-72ac-b079-7a34a76064b6"
+    ]
+  },
+  "headers": {
+    "contentType": "application/json"
+  }
+}
+{
+  "time": "2026-04-25T17:35:00.126Z",
+  "method": "POST",
+  "url": "/api/v1/users/create-doctor",
+  "status": 201,
+  "duration": "5373ms",
+  "ip": "::1",
+  "userAgent": "PostmanRuntime/7.51.1",
+  "query": {},
+  "params": {},
+  "body": {
+    "password": "***",
+    "doctor": {
+      "name": "Dr. Imran Kabir",
+      "email": "doctor10@healthmail.com",
+      "contactNumber": "01710000010",
+      "address": "Bogura, Bangladesh",
+      "registrationNumber": "BMDC-10000010",
+      "experience": 12,
+      "gender": "MALE",
+      "appointmentFee": 1100,
+      "qualification": "MBBS, MS",
+      "currentWorkingPlace": "Bogura General",
+      "designation": "Senior Surgeon"
+    },
+    "specialties": [
+      "019dc5a9-0a08-77f4-a7a7-563df9dba5fa"
+    ]
+  },
+  "headers": {
+    "contentType": "application/json"
+  }
+}
+{
+  "time": "2026-04-25T17:35:23.651Z",
+  "method": "POST",
+  "url": "/api/v1/users/create-doctor",
+  "status": 201,
+  "duration": "7119ms",
+  "ip": "::1",
+  "userAgent": "PostmanRuntime/7.51.1",
+  "query": {},
+  "params": {},
+  "body": {
+    "password": "***",
+    "doctor": {
+      "name": "Dr. Mahi Uddin",
+      "email": "doctor11@healthmail.com",
+      "contactNumber": "01710000011",
+      "address": "Dhaka, Bangladesh",
+      "registrationNumber": "BMDC-10000011",
+      "experience": 5,
+      "gender": "MALE",
+      "appointmentFee": 780,
+      "qualification": "MBBS, FCPS",
+      "currentWorkingPlace": "City Hospital",
+      "designation": "Consultant"
+    },
+    "specialties": [
+      "019dc5a9-a5d0-755a-b241-4ce42d60eff4"
+    ]
+  },
+  "headers": {
+    "contentType": "application/json"
+  }
+}
+{
+  "time": "2026-04-25T17:35:44.881Z",
+  "method": "POST",
+  "url": "/api/v1/users/create-doctor",
+  "status": 201,
+  "duration": "7438ms",
+  "ip": "::1",
+  "userAgent": "PostmanRuntime/7.51.1",
+  "query": {},
+  "params": {},
+  "body": {
+    "password": "***",
+    "doctor": {
+      "name": "Dr. Nabila Khan",
+      "email": "doctor12@healthmail.com",
+      "contactNumber": "01710000012",
+      "address": "Sylhet, Bangladesh",
+      "registrationNumber": "BMDC-10000012",
+      "experience": 9,
+      "gender": "FEMALE",
+      "appointmentFee": 920,
+      "qualification": "MBBS, MD",
+      "currentWorkingPlace": "Sylhet Medical",
+      "designation": "Specialist"
+    },
+    "specialties": [
+      "019dc5aa-aa4c-729c-89f5-155d101419a0"
+    ]
+  },
+  "headers": {
+    "contentType": "application/json"
+  }
+}
+{
+  "time": "2026-04-25T17:35:54.531Z",
+  "method": "POST",
+  "url": "/api/v1/users/create-doctor",
+  "status": 201,
+  "duration": "4947ms",
+  "ip": "::1",
+  "userAgent": "PostmanRuntime/7.51.1",
+  "query": {},
+  "params": {},
+  "body": {
+    "password": "***",
+    "doctor": {
+      "name": "Dr. Rakib Islam",
+      "email": "doctor13@healthmail.com",
+      "contactNumber": "01710000013",
+      "address": "Khulna, Bangladesh",
+      "registrationNumber": "BMDC-10000013",
+      "experience": 7,
+      "gender": "MALE",
+      "appointmentFee": 860,
+      "qualification": "MBBS",
+      "currentWorkingPlace": "Khulna Clinic",
+      "designation": "Physician"
+    },
+    "specialties": [
+      "019dc5b1-3803-73be-a78f-a67d66199fe8"
+    ]
+  },
+  "headers": {
+    "contentType": "application/json"
+  }
+}
+{
+  "time": "2026-04-25T17:36:07.061Z",
+  "method": "POST",
+  "url": "/api/v1/users/create-doctor",
+  "status": 201,
+  "duration": "5066ms",
+  "ip": "::1",
+  "userAgent": "PostmanRuntime/7.51.1",
+  "query": {},
+  "params": {},
+  "body": {
+    "password": "***",
+    "doctor": {
+      "name": "Dr. Tania Akter",
+      "email": "doctor14@healthmail.com",
+      "contactNumber": "01710000014",
+      "address": "Rajshahi, Bangladesh",
+      "registrationNumber": "BMDC-10000014",
+      "experience": 10,
+      "gender": "FEMALE",
+      "appointmentFee": 980,
+      "qualification": "MBBS, FCPS",
+      "currentWorkingPlace": "Rajshahi Care",
+      "designation": "Senior Consultant"
+    },
+    "specialties": [
+      "019dc5a5-4394-74af-9aa2-7043581de782"
+    ]
+  },
+  "headers": {
+    "contentType": "application/json"
+  }
+}
+{
+  "time": "2026-04-25T17:36:19.849Z",
+  "method": "POST",
+  "url": "/api/v1/users/create-doctor",
+  "status": 201,
+  "duration": "5343ms",
+  "ip": "::1",
+  "userAgent": "PostmanRuntime/7.51.1",
+  "query": {},
+  "params": {},
+  "body": {
+    "password": "***",
+    "doctor": {
+      "name": "Dr. Fahad Karim",
+      "email": "doctor15@healthmail.com",
+      "contactNumber": "01710000015",
+      "address": "Barishal, Bangladesh",
+      "registrationNumber": "BMDC-10000015",
+      "experience": 6,
+      "gender": "MALE",
+      "appointmentFee": 810,
+      "qualification": "MBBS, DCH",
+      "currentWorkingPlace": "Barishal Hospital",
+      "designation": "Registrar"
+    },
+    "specialties": [
+      "019dc5a6-dd1c-7181-ac5d-2215ffebb1cd"
+    ]
+  },
+  "headers": {
+    "contentType": "application/json"
+  }
+}
+{
+  "time": "2026-04-25T17:36:31.119Z",
+  "method": "POST",
+  "url": "/api/v1/users/create-doctor",
+  "status": 201,
+  "duration": "4995ms",
+  "ip": "::1",
+  "userAgent": "PostmanRuntime/7.51.1",
+  "query": {},
+  "params": {},
+  "body": {
+    "password": "***",
+    "doctor": {
+      "name": "Dr. Sumaiya Noor",
+      "email": "doctor16@healthmail.com",
+      "contactNumber": "01710000016",
+      "address": "Cumilla, Bangladesh",
+      "registrationNumber": "BMDC-10000016",
+      "experience": 8,
+      "gender": "FEMALE",
+      "appointmentFee": 890,
+      "qualification": "MBBS, MS",
+      "currentWorkingPlace": "Cumilla Medical",
+      "designation": "Consultant Surgeon"
+    },
+    "specialties": [
+      "019dc5a7-b450-70bf-8586-ca789faa93ac"
+    ]
+  },
+  "headers": {
+    "contentType": "application/json"
+  }
+}
+{
+  "time": "2026-04-25T17:36:49.096Z",
+  "method": "POST",
+  "url": "/api/v1/users/create-doctor",
+  "status": 201,
+  "duration": "11339ms",
+  "ip": "::1",
+  "userAgent": "PostmanRuntime/7.51.1",
+  "query": {},
+  "params": {},
+  "body": {
+    "password": "***",
+    "doctor": {
+      "name": "Dr. Mahin Chowdhury",
+      "email": "doctor17@healthmail.com",
+      "contactNumber": "01710000017",
+      "address": "Noakhali, Bangladesh",
+      "registrationNumber": "BMDC-10000017",
+      "experience": 4,
+      "gender": "MALE",
+      "appointmentFee": 700,
+      "qualification": "MBBS",
+      "currentWorkingPlace": "Community Hospital",
+      "designation": "Medical Officer"
+    },
+    "specialties": [
+      "019dc5a8-3451-72ac-b079-7a34a76064b6"
+    ]
+  },
+  "headers": {
+    "contentType": "application/json"
+  }
+}
+{
+  "time": "2026-04-25T17:36:59.181Z",
+  "method": "POST",
+  "url": "/api/v1/users/create-doctor",
+  "status": 201,
+  "duration": "5777ms",
+  "ip": "::1",
+  "userAgent": "PostmanRuntime/7.51.1",
+  "query": {},
+  "params": {},
+  "body": {
+    "password": "***",
+    "doctor": {
+      "name": "Dr. Jannat Sultana",
+      "email": "doctor18@healthmail.com",
+      "contactNumber": "01710000018",
+      "address": "Mymensingh, Bangladesh",
+      "registrationNumber": "BMDC-10000018",
+      "experience": 11,
+      "gender": "FEMALE",
+      "appointmentFee": 1080,
+      "qualification": "MBBS, FCPS",
+      "currentWorkingPlace": "Mymensingh Central",
+      "designation": "Senior Specialist"
+    },
+    "specialties": [
+      "019dc5a9-0a08-77f4-a7a7-563df9dba5fa"
+    ]
+  },
+  "headers": {
+    "contentType": "application/json"
+  }
+}
+{
+  "time": "2026-04-25T17:37:10.910Z",
+  "method": "POST",
+  "url": "/api/v1/users/create-doctor",
+  "status": 201,
+  "duration": "5162ms",
+  "ip": "::1",
+  "userAgent": "PostmanRuntime/7.51.1",
+  "query": {},
+  "params": {},
+  "body": {
+    "password": "***",
+    "doctor": {
+      "name": "Dr. Samiul Haque",
+      "email": "doctor19@healthmail.com",
+      "contactNumber": "01710000019",
+      "address": "Rangpur, Bangladesh",
+      "registrationNumber": "BMDC-10000019",
+      "experience": 6,
+      "gender": "MALE",
+      "appointmentFee": 830,
+      "qualification": "MBBS, MD",
+      "currentWorkingPlace": "Rangpur Health",
+      "designation": "Consultant"
+    },
+    "specialties": [
+      "019dc5a9-a5d0-755a-b241-4ce42d60eff4"
+    ]
+  },
+  "headers": {
+    "contentType": "application/json"
+  }
+}
+{
+  "time": "2026-04-25T17:37:21.857Z",
+  "method": "POST",
+  "url": "/api/v1/users/create-doctor",
+  "status": 201,
+  "duration": "5362ms",
+  "ip": "::1",
+  "userAgent": "PostmanRuntime/7.51.1",
+  "query": {},
+  "params": {},
+  "body": {
+    "password": "***",
+    "doctor": {
+      "name": "Dr. Priyanka Das",
+      "email": "doctor20@healthmail.com",
+      "contactNumber": "01710000020",
+      "address": "Bogura, Bangladesh",
+      "registrationNumber": "BMDC-10000020",
+      "experience": 9,
+      "gender": "FEMALE",
+      "appointmentFee": 940,
+      "qualification": "MBBS, FCPS",
+      "currentWorkingPlace": "Bogura General",
+      "designation": "Consultant"
+    },
+    "specialties": [
+      "019dc5aa-aa4c-729c-89f5-155d101419a0"
+    ]
+  },
+  "headers": {
+    "contentType": "application/json"
+  }
+}
+{
+  "time": "2026-04-25T17:37:49.874Z",
+  "method": "POST",
+  "url": "/api/v1/users/create-doctor",
+  "status": 201,
+  "duration": "6677ms",
+  "ip": "::1",
+  "userAgent": "PostmanRuntime/7.51.1",
+  "query": {},
+  "params": {},
+  "body": {
+    "password": "***",
+    "doctor": {
+      "name": "Dr. Arif Hasan",
+      "email": "doctor21@healthmail.com",
+      "contactNumber": "01710000021",
+      "address": "Dhaka, Bangladesh",
+      "registrationNumber": "BMDC-10000021",
+      "experience": 7,
+      "gender": "MALE",
+      "appointmentFee": 850,
+      "qualification": "MBBS, MD",
+      "currentWorkingPlace": "Dhaka Care Hospital",
+      "designation": "Consultant Physician"
+    },
+    "specialties": [
+      "019dc5b1-3803-73be-a78f-a67d66199fe8"
+    ]
+  },
+  "headers": {
+    "contentType": "application/json"
+  }
+}
+{
+  "time": "2026-04-25T17:37:58.087Z",
+  "method": "POST",
+  "url": "/api/v1/users/create-doctor",
+  "status": 201,
+  "duration": "4709ms",
+  "ip": "::1",
+  "userAgent": "PostmanRuntime/7.51.1",
+  "query": {},
+  "params": {},
+  "body": {
+    "password": "***",
+    "doctor": {
+      "name": "Dr. Sabiha Noor",
+      "email": "doctor22@healthmail.com",
+      "contactNumber": "01710000022",
+      "address": "Chattogram, Bangladesh",
+      "registrationNumber": "BMDC-10000022",
+      "experience": 10,
+      "gender": "FEMALE",
+      "appointmentFee": 990,
+      "qualification": "MBBS, FCPS",
+      "currentWorkingPlace": "Chattogram Medical",
+      "designation": "Senior Consultant"
+    },
+    "specialties": [
+      "019dc5a5-4394-74af-9aa2-7043581de782"
+    ]
+  },
+  "headers": {
+    "contentType": "application/json"
+  }
+}
+{
+  "time": "2026-04-25T17:38:10.251Z",
+  "method": "POST",
+  "url": "/api/v1/users/create-doctor",
+  "status": 201,
+  "duration": "4608ms",
+  "ip": "::1",
+  "userAgent": "PostmanRuntime/7.51.1",
+  "query": {},
+  "params": {},
+  "body": {
+    "password": "***",
+    "doctor": {
+      "name": "Dr. Fahim Reza",
+      "email": "doctor23@healthmail.com",
+      "contactNumber": "01710000023",
+      "address": "Khulna, Bangladesh",
+      "registrationNumber": "BMDC-10000023",
+      "experience": 5,
+      "gender": "MALE",
+      "appointmentFee": 760,
+      "qualification": "MBBS",
+      "currentWorkingPlace": "Khulna Central Clinic",
+      "designation": "Medical Officer"
+    },
+    "specialties": [
+      "019dc5a6-dd1c-7181-ac5d-2215ffebb1cd"
+    ]
+  },
+  "headers": {
+    "contentType": "application/json"
+  }
+}
+{
+  "time": "2026-04-25T17:38:22.767Z",
+  "method": "POST",
+  "url": "/api/v1/users/create-doctor",
+  "status": 201,
+  "duration": "4901ms",
+  "ip": "::1",
+  "userAgent": "PostmanRuntime/7.51.1",
+  "query": {},
+  "params": {},
+  "body": {
+    "password": "***",
+    "doctor": {
+      "name": "Dr. Lamia Sultana",
+      "email": "doctor24@healthmail.com",
+      "contactNumber": "01710000024",
+      "address": "Sylhet, Bangladesh",
+      "registrationNumber": "BMDC-10000024",
+      "experience": 8,
+      "gender": "FEMALE",
+      "appointmentFee": 910,
+      "qualification": "MBBS, MS",
+      "currentWorkingPlace": "Sylhet Hospital",
+      "designation": "Consultant Surgeon"
+    },
+    "specialties": [
+      "019dc5a7-b450-70bf-8586-ca789faa93ac"
+    ]
+  },
+  "headers": {
+    "contentType": "application/json"
+  }
+}
+{
+  "time": "2026-04-25T17:38:40.202Z",
+  "method": "POST",
+  "url": "/api/v1/users/create-doctor",
+  "status": 201,
+  "duration": "6495ms",
+  "ip": "::1",
+  "userAgent": "PostmanRuntime/7.51.1",
+  "query": {},
+  "params": {},
+  "body": {
+    "password": "***",
+    "doctor": {
+      "name": "Dr. Tanjim Kabir",
+      "email": "doctor25@healthmail.com",
+      "contactNumber": "01710000025",
+      "address": "Rajshahi, Bangladesh",
+      "registrationNumber": "BMDC-10000025",
+      "experience": 12,
+      "gender": "MALE",
+      "appointmentFee": 1120,
+      "qualification": "MBBS, FCPS",
+      "currentWorkingPlace": "Rajshahi Medical Center",
+      "designation": "Senior Specialist"
+    },
+    "specialties": [
+      "019dc5a8-3451-72ac-b079-7a34a76064b6"
+    ]
+  },
+  "headers": {
+    "contentType": "application/json"
+  }
+}
+{
+  "time": "2026-04-25T17:38:49.447Z",
+  "method": "POST",
+  "url": "/api/v1/users/create-doctor",
+  "status": 201,
+  "duration": "5140ms",
+  "ip": "::1",
+  "userAgent": "PostmanRuntime/7.51.1",
+  "query": {},
+  "params": {},
+  "body": {
+    "password": "***",
+    "doctor": {
+      "name": "Dr. Rukaiya Jahan",
+      "email": "doctor26@healthmail.com",
+      "contactNumber": "01710000026",
+      "address": "Barishal, Bangladesh",
+      "registrationNumber": "BMDC-10000026",
+      "experience": 6,
+      "gender": "FEMALE",
+      "appointmentFee": 820,
+      "qualification": "MBBS, DGO",
+      "currentWorkingPlace": "Barishal Women Care",
+      "designation": "Gyne Consultant"
+    },
+    "specialties": [
+      "019dc5a9-0a08-77f4-a7a7-563df9dba5fa"
+    ]
+  },
+  "headers": {
+    "contentType": "application/json"
+  }
+}
+{
+  "time": "2026-04-25T17:39:01.450Z",
+  "method": "POST",
+  "url": "/api/v1/users/create-doctor",
+  "status": 201,
+  "duration": "4905ms",
+  "ip": "::1",
+  "userAgent": "PostmanRuntime/7.51.1",
+  "query": {},
+  "params": {},
+  "body": {
+    "password": "***",
+    "doctor": {
+      "name": "Dr. Salman Hossain",
+      "email": "doctor27@healthmail.com",
+      "contactNumber": "01710000027",
+      "address": "Cumilla, Bangladesh",
+      "registrationNumber": "BMDC-10000027",
+      "experience": 9,
+      "gender": "MALE",
+      "appointmentFee": 930,
+      "qualification": "MBBS, MD",
+      "currentWorkingPlace": "Cumilla City Hospital",
+      "designation": "Consultant"
+    },
+    "specialties": [
+      "019dc5a9-a5d0-755a-b241-4ce42d60eff4"
+    ]
+  },
+  "headers": {
+    "contentType": "application/json"
+  }
+}
+{
+  "time": "2026-04-25T17:39:11.568Z",
+  "method": "POST",
+  "url": "/api/v1/users/create-doctor",
+  "status": 201,
+  "duration": "4879ms",
+  "ip": "::1",
+  "userAgent": "PostmanRuntime/7.51.1",
+  "query": {},
+  "params": {},
+  "body": {
+    "password": "***",
+    "doctor": {
+      "name": "Dr. Nusaira Ahmed",
+      "email": "doctor28@healthmail.com",
+      "contactNumber": "01710000028",
+      "address": "Noakhali, Bangladesh",
+      "registrationNumber": "BMDC-10000028",
+      "experience": 4,
+      "gender": "FEMALE",
+      "appointmentFee": 710,
+      "qualification": "MBBS",
+      "currentWorkingPlace": "Noakhali Clinic",
+      "designation": "Medical Officer"
+    },
+    "specialties": [
+      "019dc5aa-aa4c-729c-89f5-155d101419a0"
+    ]
+  },
+  "headers": {
+    "contentType": "application/json"
+  }
+}
+{
+  "time": "2026-04-25T17:39:22.880Z",
+  "method": "POST",
+  "url": "/api/v1/users/create-doctor",
+  "status": 201,
+  "duration": "5201ms",
+  "ip": "::1",
+  "userAgent": "PostmanRuntime/7.51.1",
+  "query": {},
+  "params": {},
+  "body": {
+    "password": "***",
+    "doctor": {
+      "name": "Dr. Imtiaz Chowdhury",
+      "email": "doctor29@healthmail.com",
+      "contactNumber": "01710000029",
+      "address": "Rangpur, Bangladesh",
+      "registrationNumber": "BMDC-10000029",
+      "experience": 11,
+      "gender": "MALE",
+      "appointmentFee": 1060,
+      "qualification": "MBBS, FCPS",
+      "currentWorkingPlace": "Rangpur Medical",
+      "designation": "Senior Consultant"
+    },
+    "specialties": [
+      "019dc5b1-3803-73be-a78f-a67d66199fe8"
+    ]
+  },
+  "headers": {
+    "contentType": "application/json"
+  }
+}
+{
+  "time": "2026-04-25T17:39:31.862Z",
+  "method": "POST",
+  "url": "/api/v1/users/create-doctor",
+  "status": 201,
+  "duration": "4954ms",
+  "ip": "::1",
+  "userAgent": "PostmanRuntime/7.51.1",
+  "query": {},
+  "params": {},
+  "body": {
+    "password": "***",
+    "doctor": {
+      "name": "Dr. Mehzabin Karim",
+      "email": "doctor30@healthmail.com",
+      "contactNumber": "01710000030",
+      "address": "Bogura, Bangladesh",
+      "registrationNumber": "BMDC-10000030",
+      "experience": 7,
+      "gender": "FEMALE",
+      "appointmentFee": 870,
+      "qualification": "MBBS, FCPS",
+      "currentWorkingPlace": "Bogura Health Point",
+      "designation": "Consultant"
+    },
+    "specialties": [
+      "019dc5a5-4394-74af-9aa2-7043581de782"
+    ]
+  },
+  "headers": {
+    "contentType": "application/json"
+  }
+}
+{
+  "time": "2026-04-25T17:40:03.052Z",
+  "method": "POST",
+  "url": "/api/v1/users/create-doctor",
+  "status": 201,
+  "duration": "7705ms",
+  "ip": "::1",
+  "userAgent": "PostmanRuntime/7.51.1",
+  "query": {},
+  "params": {},
+  "body": {
+    "password": "***",
+    "doctor": {
+      "name": "Dr. Rayhan Islam",
+      "email": "doctor31@healthmail.com",
+      "contactNumber": "01710000031",
+      "address": "Dhaka, Bangladesh",
+      "registrationNumber": "BMDC-10000031",
+      "experience": 8,
+      "gender": "MALE",
+      "appointmentFee": 890,
+      "qualification": "MBBS, MD",
+      "currentWorkingPlace": "Metro Hospital",
+      "designation": "Consultant"
+    },
+    "specialties": [
+      "019dc5a6-dd1c-7181-ac5d-2215ffebb1cd"
+    ]
+  },
+  "headers": {
+    "contentType": "application/json"
+  }
+}
+{
+  "time": "2026-04-25T17:40:11.000Z",
+  "method": "POST",
+  "url": "/api/v1/users/create-doctor",
+  "status": 201,
+  "duration": "4942ms",
+  "ip": "::1",
+  "userAgent": "PostmanRuntime/7.51.1",
+  "query": {},
+  "params": {},
+  "body": {
+    "password": "***",
+    "doctor": {
+      "name": "Dr. Tahmina Noor",
+      "email": "doctor32@healthmail.com",
+      "contactNumber": "01710000032",
+      "address": "Chattogram, Bangladesh",
+      "registrationNumber": "BMDC-10000032",
+      "experience": 10,
+      "gender": "FEMALE",
+      "appointmentFee": 980,
+      "qualification": "MBBS, FCPS",
+      "currentWorkingPlace": "Port City Hospital",
+      "designation": "Senior Consultant"
+    },
+    "specialties": [
+      "019dc5a7-b450-70bf-8586-ca789faa93ac"
+    ]
+  },
+  "headers": {
+    "contentType": "application/json"
+  }
+}
+{
+  "time": "2026-04-25T17:40:22.241Z",
+  "method": "POST",
+  "url": "/api/v1/users/create-doctor",
+  "status": 201,
+  "duration": "4731ms",
+  "ip": "::1",
+  "userAgent": "PostmanRuntime/7.51.1",
+  "query": {},
+  "params": {},
+  "body": {
+    "password": "***",
+    "doctor": {
+      "name": "Dr. Sabbir Hasan",
+      "email": "doctor33@healthmail.com",
+      "contactNumber": "01710000033",
+      "address": "Khulna, Bangladesh",
+      "registrationNumber": "BMDC-10000033",
+      "experience": 5,
+      "gender": "MALE",
+      "appointmentFee": 760,
+      "qualification": "MBBS",
+      "currentWorkingPlace": "Khulna Care",
+      "designation": "Physician"
+    },
+    "specialties": [
+      "019dc5a8-3451-72ac-b079-7a34a76064b6"
+    ]
+  },
+  "headers": {
+    "contentType": "application/json"
+  }
+}
+{
+  "time": "2026-04-25T17:40:32.948Z",
+  "method": "POST",
+  "url": "/api/v1/users/create-doctor",
+  "status": 201,
+  "duration": "5260ms",
+  "ip": "::1",
+  "userAgent": "PostmanRuntime/7.51.1",
+  "query": {},
+  "params": {},
+  "body": {
+    "password": "***",
+    "doctor": {
+      "name": "Dr. Jui Sultana",
+      "email": "doctor34@healthmail.com",
+      "contactNumber": "01710000034",
+      "address": "Sylhet, Bangladesh",
+      "registrationNumber": "BMDC-10000034",
+      "experience": 9,
+      "gender": "FEMALE",
+      "appointmentFee": 930,
+      "qualification": "MBBS, MS",
+      "currentWorkingPlace": "Sylhet General",
+      "designation": "Consultant Surgeon"
+    },
+    "specialties": [
+      "019dc5a9-0a08-77f4-a7a7-563df9dba5fa"
+    ]
+  },
+  "headers": {
+    "contentType": "application/json"
+  }
+}
+{
+  "time": "2026-04-25T17:40:42.885Z",
+  "method": "POST",
+  "url": "/api/v1/users/create-doctor",
+  "status": 201,
+  "duration": "5135ms",
+  "ip": "::1",
+  "userAgent": "PostmanRuntime/7.51.1",
+  "query": {},
+  "params": {},
+  "body": {
+    "password": "***",
+    "doctor": {
+      "name": "Dr. Nahid Karim",
+      "email": "doctor35@healthmail.com",
+      "contactNumber": "01710000035",
+      "address": "Rajshahi, Bangladesh",
+      "registrationNumber": "BMDC-10000035",
+      "experience": 11,
+      "gender": "MALE",
+      "appointmentFee": 1080,
+      "qualification": "MBBS, FCPS",
+      "currentWorkingPlace": "Rajshahi Mediplex",
+      "designation": "Senior Specialist"
+    },
+    "specialties": [
+      "019dc5a9-a5d0-755a-b241-4ce42d60eff4"
+    ]
+  },
+  "headers": {
+    "contentType": "application/json"
+  }
+}
+{
+  "time": "2026-04-25T17:40:57.118Z",
+  "method": "POST",
+  "url": "/api/v1/users/create-doctor",
+  "status": 201,
+  "duration": "5175ms",
+  "ip": "::1",
+  "userAgent": "PostmanRuntime/7.51.1",
+  "query": {},
+  "params": {},
+  "body": {
+    "password": "***",
+    "doctor": {
+      "name": "Dr. Farzana Akter",
+      "email": "doctor36@healthmail.com",
+      "contactNumber": "01710000036",
+      "address": "Barishal, Bangladesh",
+      "registrationNumber": "BMDC-10000036",
+      "experience": 7,
+      "gender": "FEMALE",
+      "appointmentFee": 860,
+      "qualification": "MBBS, DGO",
+      "currentWorkingPlace": "Barishal Clinic",
+      "designation": "Consultant"
+    },
+    "specialties": [
+      "019dc5aa-aa4c-729c-89f5-155d101419a0"
+    ]
+  },
+  "headers": {
+    "contentType": "application/json"
+  }
+}
+{
+  "time": "2026-04-25T17:41:09.935Z",
+  "method": "POST",
+  "url": "/api/v1/users/create-doctor",
+  "status": 201,
+  "duration": "5271ms",
+  "ip": "::1",
+  "userAgent": "PostmanRuntime/7.51.1",
+  "query": {},
+  "params": {},
+  "body": {
+    "password": "***",
+    "doctor": {
+      "name": "Dr. Omar Faruk",
+      "email": "doctor37@healthmail.com",
+      "contactNumber": "01710000037",
+      "address": "Cumilla, Bangladesh",
+      "registrationNumber": "BMDC-10000037",
+      "experience": 6,
+      "gender": "MALE",
+      "appointmentFee": 810,
+      "qualification": "MBBS",
+      "currentWorkingPlace": "Cumilla Health",
+      "designation": "Medical Officer"
+    },
+    "specialties": [
+      "019dc5b1-3803-73be-a78f-a67d66199fe8"
+    ]
+  },
+  "headers": {
+    "contentType": "application/json"
+  }
+}
+{
+  "time": "2026-04-25T17:41:23.209Z",
+  "method": "POST",
+  "url": "/api/v1/users/create-doctor",
+  "status": 201,
+  "duration": "6575ms",
+  "ip": "::1",
+  "userAgent": "PostmanRuntime/7.51.1",
+  "query": {},
+  "params": {},
+  "body": {
+    "password": "***",
+    "doctor": {
+      "name": "Dr. Anika Rahman",
+      "email": "doctor38@healthmail.com",
+      "contactNumber": "01710000038",
+      "address": "Noakhali, Bangladesh",
+      "registrationNumber": "BMDC-10000038",
+      "experience": 4,
+      "gender": "FEMALE",
+      "appointmentFee": 720,
+      "qualification": "MBBS",
+      "currentWorkingPlace": "Noakhali Community",
+      "designation": "Medical Officer"
+    },
+    "specialties": [
+      "019dc5a5-4394-74af-9aa2-7043581de782"
+    ]
+  },
+  "headers": {
+    "contentType": "application/json"
+  }
+}
+{
+  "time": "2026-04-25T17:41:34.660Z",
+  "method": "POST",
+  "url": "/api/v1/users/create-doctor",
+  "status": 201,
+  "duration": "5102ms",
+  "ip": "::1",
+  "userAgent": "PostmanRuntime/7.51.1",
+  "query": {},
+  "params": {},
+  "body": {
+    "password": "***",
+    "doctor": {
+      "name": "Dr. Rifat Hossain",
+      "email": "doctor39@healthmail.com",
+      "contactNumber": "01710000039",
+      "address": "Rangpur, Bangladesh",
+      "registrationNumber": "BMDC-10000039",
+      "experience": 10,
+      "gender": "MALE",
+      "appointmentFee": 990,
+      "qualification": "MBBS, MD",
+      "currentWorkingPlace": "Rangpur Central",
+      "designation": "Consultant"
+    },
+    "specialties": [
+      "019dc5a6-dd1c-7181-ac5d-2215ffebb1cd"
+    ]
+  },
+  "headers": {
+    "contentType": "application/json"
+  }
+}
+{
+  "time": "2026-04-25T17:41:46.612Z",
+  "method": "POST",
+  "url": "/api/v1/users/create-doctor",
+  "status": 201,
+  "duration": "5497ms",
+  "ip": "::1",
+  "userAgent": "PostmanRuntime/7.51.1",
+  "query": {},
+  "params": {},
+  "body": {
+    "password": "***",
+    "doctor": {
+      "name": "Dr. Sharmeen Kabir",
+      "email": "doctor40@healthmail.com",
+      "contactNumber": "01710000040",
+      "address": "Bogura, Bangladesh",
+      "registrationNumber": "BMDC-10000040",
+      "experience": 8,
+      "gender": "FEMALE",
+      "appointmentFee": 900,
+      "qualification": "MBBS, FCPS",
+      "currentWorkingPlace": "Bogura Medical",
+      "designation": "Consultant"
+    },
+    "specialties": [
+      "019dc5a7-b450-70bf-8586-ca789faa93ac"
+    ]
+  },
+  "headers": {
+    "contentType": "application/json"
+  }
+}
+{
+  "time": "2026-04-25T17:42:46.777Z",
+  "method": "POST",
+  "url": "/api/v1/rag/ingest-doctors",
+  "status": 200,
+  "duration": "44044ms",
+  "ip": "::1",
+  "userAgent": "PostmanRuntime/7.51.1",
+  "query": {},
+  "params": {},
+  "headers": {
+    "contentType": "text/plain"
+  }
+}

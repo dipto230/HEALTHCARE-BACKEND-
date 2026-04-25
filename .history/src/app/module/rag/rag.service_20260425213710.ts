@@ -13,7 +13,7 @@ export class RAGService {
     }
 
     async ingestDoctorsData() {
-        return this.indexingService.indexDoctorsData();
+        return this.indexingService.index
     }
 
 

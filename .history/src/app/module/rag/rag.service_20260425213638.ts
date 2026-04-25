@@ -12,9 +12,7 @@ export class RAGService {
 
     }
 
-    async ingestDoctorsData() {
-        return this.indexingService.indexDoctorsData();
-    }
+    async ingestDoctors
 
 
 }
