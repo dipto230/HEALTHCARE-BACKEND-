@@ -1,4 +1,3 @@
-import { Prisma } from "../../../generated/prisma/client";
 import { prisma } from "../../lib/prisma";
 import { EmbeddingService } from "./embedding.service";
 
@@ -8,59 +7,7 @@ export class IndexingService {
     this.embeddingService = new EmbeddingService();
   }
 
-     async indexDocument(
-    chunkKey: string,
-    sourceType: string,
-    sourceId: string,
-    content: string,
-    sourceLabel?: string,
-    metadata?: Record<string, unknown>,
-  ) {
-    try {
-      const embedding = await this.embeddingService.generateEmbedding(content);
-      const vectorLiteral = toVectorLiteral(embedding);
-
-      await prisma.$executeRaw(Prisma.sql`
-        INSERT INTO "document_embeddings"
-        (
-            "id",
-          "chunkKey",
-          "sourceType",
-          "sourceId",
-          "sourceLabel",
-          "content",
-          "metadata",
-          "embedding",
-          "updatedAt"
-        )
-        VALUES
-        (
-            ${Prisma.raw("gen_random_uuid()")}
-            ${chunkKey},
-          ${sourceType},
-          ${sourceId},
-          ${sourceLabel || null},
-          ${content},
-          ${JSON.stringify(metadata || {})} :: jsonb,
-          CAST(${vectorLiteral} AS vector),
-          NOW()
-        )
-        ON CONFLICT ("chunkKey")
-        DO UPDATE SET
-            "sourceType" = EXCLUDED."sourceType",
-          "sourceId" = EXCLUDED."sourceId",
-          "sourceLabel" = EXCLUDED."sourceLabel",
-          "content" = EXCLUDED."content",
-          "metadata" = EXCLUDED."metadata",
-          "embedding" = EXCLUDED."embedding",
-          "isDeleted" = false,
-          "deletedAt" = null,
-          "updatedAt" = NOW()
-        `);
-    } catch (error) {
-      console.log(error);
-    }
-  }
+    
   async indexDoctorsData() {
     try {
       console.log("Fetching doctor data for indexing..............");
