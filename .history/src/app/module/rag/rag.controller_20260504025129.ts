@@ -50,6 +50,5 @@ const queryRag = catchAsync(async (req: Request, res: Response) => {
 
 export const RagController ={
     getStats,
-    ingestDoctors,
-    queryRag
+    ingestDoctors
 }

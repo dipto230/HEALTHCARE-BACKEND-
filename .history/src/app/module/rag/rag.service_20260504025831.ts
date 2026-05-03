@@ -1,7 +1,3 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
-
-import { Prisma } from "../../../generated/prisma/client";
-import { prisma } from "../../lib/prisma";
 import { EmbeddingService } from "./embedding.service";
 import { IndexingService } from "./indexing.service";
 
@@ -47,8 +43,6 @@ export class RAGService {
       throw error;
     }
   }
-
- 
 
 
     async generateAnswer(

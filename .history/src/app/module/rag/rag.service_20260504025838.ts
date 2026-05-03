@@ -1,7 +1,4 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
-
 import { Prisma } from "../../../generated/prisma/client";
-import { prisma } from "../../lib/prisma";
 import { EmbeddingService } from "./embedding.service";
 import { IndexingService } from "./indexing.service";
 
@@ -32,7 +29,7 @@ export class RAGService {
 
       const vectorLiteral = `[${queryEmbedding.join(",")}]`;
 
-      const results = await prisma.$queryRaw(Prisma.sql`
+      const results = await Prisma.$queryRaw(Prisma.sql`
           SELECT id, "chunkKey", "sourceType", "sourceId", "sourceLabel", content, metadata, embedding, "isDeleted", "deletedAt", "createdAt", "updatedAt", 1 - (embedding <=> CAST(${vectorLiteral} AS vector)) as similarity
           FROM "document_embeddings"
           WHERE "isDeleted" = false
@@ -47,8 +44,6 @@ export class RAGService {
       throw error;
     }
   }
-
- 
 
 
     async generateAnswer(
