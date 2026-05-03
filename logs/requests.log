@@ -3184,3 +3184,20 @@
     "contentType": "text/plain"
   }
 }
+{
+  "time": "2026-05-03T22:11:56.094Z",
+  "method": "POST",
+  "url": "/api/v1/rag/query",
+  "status": 200,
+  "duration": "16129ms",
+  "ip": "::1",
+  "userAgent": "PostmanRuntime/7.51.1",
+  "query": {},
+  "params": {},
+  "body": {
+    "query": "I need a doctor for nurology issue"
+  },
+  "headers": {
+    "contentType": "application/json"
+  }
+}
