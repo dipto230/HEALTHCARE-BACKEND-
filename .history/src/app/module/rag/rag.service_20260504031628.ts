@@ -4,17 +4,15 @@ import { Prisma } from "../../../generated/prisma/client";
 import { prisma } from "../../lib/prisma";
 import { EmbeddingService } from "./embedding.service";
 import { IndexingService } from "./indexing.service";
-import { LLMService } from "./llm.service";
 
 export class RAGService {
     private embeddingService: EmbeddingService;
-    private llmService: LLMService;
+    //private llmService: LLMService;
     private indexingService: IndexingService
 
     constructor() {
         this.embeddingService = new EmbeddingService()
         this.indexingService = new IndexingService()
-            this.llmService = new LLMService();
 
     }
 

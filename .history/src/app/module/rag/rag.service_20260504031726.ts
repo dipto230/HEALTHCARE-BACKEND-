@@ -14,7 +14,6 @@ export class RAGService {
     constructor() {
         this.embeddingService = new EmbeddingService()
         this.indexingService = new IndexingService()
-            this.llmService = new LLMService();
 
     }
 
