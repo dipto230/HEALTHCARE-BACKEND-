@@ -5,7 +5,7 @@ import status from "http-status"
 import { RAGService } from "./rag.service"
 import { redisService } from "../../lib/redis"
 
-const ragService = new RAGService();
+const ragService = new RAGService()
 
 const getStats = catchAsync(async (req: Request, res: Response) => {
   const result = await ragService.getStats();
@@ -17,17 +17,17 @@ const getStats = catchAsync(async (req: Request, res: Response) => {
     data: result,
   });
 });
-
 const ingestDoctors = catchAsync(async (req: Request, res: Response) => {
-  const result = await ragService.ingestDoctorsData();
+    const result = await ragService.ingestDoctorsData();
 
-  sendResponse(res, {
-    success: true,
-    httpStatusCode: status.OK,
-    message: "Doctors data ingestion completed",
-    data: result,
-  });
-});
+    sendResponse(res, {
+        success: true,
+        httpStatusCode: status.OK,
+        message: "Doctors data ingestion completed",
+        data:result
+    })
+    
+})
 
 const queryRag = catchAsync(async (req: Request, res: Response) => {
   const { query, limit, sourceType } = req.body;
@@ -40,8 +40,14 @@ const queryRag = catchAsync(async (req: Request, res: Response) => {
     });
   }
 
-  // Generate cache key from query parameters
-  const cacheKey = `rag:query:${query}:${limit ?? 5}:${sourceType || 'all'}`;
+  const result = await ragService.generateAnswer(
+    query,
+    limit ?? 5,
+    sourceType,
+    true,
+  );
+
+   const cacheKey = `rag:query:${query}:${limit ?? 5}:${sourceType || 'all'}`;
 
   try {
     // Try to get from cache first
@@ -88,8 +94,8 @@ const queryRag = catchAsync(async (req: Request, res: Response) => {
   });
 });
 
-export const RagController = {
-  getStats,
-  ingestDoctors,
-  queryRag,
-};
+export const RagController ={
+    getStats,
+    ingestDoctors,
+    queryRag
+}

@@ -2,14 +2,13 @@ import { Server } from "http";
 import app from "./app"
 import { seedSuperAdmin } from "./app/util/seed";
 import { envVars } from "./config/env";
-import { redisService } from "./app/lib/redis";
 
 
 let server : Server;
 const bootstrap = async() => {
     try {
         await seedSuperAdmin()
-          await redisService.connect().catch(console.error);
+        
        server = app.listen(envVars.PORT, () => {
               console.log(`server is running on http://localhost:${envVars.PORT}`);
         })

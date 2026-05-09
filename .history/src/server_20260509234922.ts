@@ -2,7 +2,6 @@ import { Server } from "http";
 import app from "./app"
 import { seedSuperAdmin } from "./app/util/seed";
 import { envVars } from "./config/env";
-import { redisService } from "./app/lib/redis";
 
 
 let server : Server;

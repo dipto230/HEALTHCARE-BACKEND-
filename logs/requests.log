@@ -3297,3 +3297,20 @@
     "contentType": "application/json"
   }
 }
+{
+  "time": "2026-05-09T17:23:47.946Z",
+  "method": "POST",
+  "url": "/api/v1/rag/query",
+  "status": 200,
+  "duration": "27080ms",
+  "ip": "::1",
+  "userAgent": "axios/1.13.5",
+  "query": {},
+  "params": {},
+  "body": {
+    "query": "Neurologist in Dhaka?"
+  },
+  "headers": {
+    "contentType": "application/json"
+  }
+}
